@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from backend.llm_confidence import score_subclaim_to_superclaim_confidence
+from llm_confidence import score_subclaim_to_superclaim_confidence
 
 
 app = FastAPI(title="Claims MVP Backend", version="0.1.0")
