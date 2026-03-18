@@ -87,6 +87,7 @@ Return ONLY valid JSON, no markdown, with this exact shape:
             {"role": "system", "content": system_msg},
             {"role": "user", "content": user_msg},
         ],
+        temperature = 0.1,
     )
 
     text = (resp.choices[0].message.content or "").strip()
