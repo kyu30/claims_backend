@@ -26,7 +26,7 @@ SUPERCLAIMS_PATH = ROOT / "greenwashing_superclaims.json"
 MAP_PATH = ROOT / "claim_superclaim_map.json"
 HISTORY_PATH = ROOT / "greenwashing_claim_history.json"
 
-APP_DATA_DIR = ROOT / "backend" / "data"
+APP_DATA_DIR = ROOT / "data"
 PROPOSALS_PATH = APP_DATA_DIR / "proposals.json"
 MERGES_PATH = APP_DATA_DIR / "merges.json"
 
