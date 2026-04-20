@@ -531,13 +531,16 @@ def _llm_suggest_mapping(
 
                 canonical = _pick_canonical_id([a, b])
                 other = b if canonical == a else a
+                text_by_id = {ids[k]: texts[k] for k in range(len(ids))}
                 proposals.append(
                     (
                         "merge_subclaims",
                         {
                             "canonicalSubclaimId": canonical,
+                            "canonicalSubclaimText": str(text_by_id.get(canonical) or ""),
                             "mergeSubclaimIds": sorted([a, b]),
                             "removeSubclaimId": other,
+                            "removeSubclaimText": str(text_by_id.get(other) or ""),
                             "sharedSuperclaimId": sc_a,
                             "pairCosine": sij,
                         },
@@ -575,13 +578,16 @@ def _llm_suggest_mapping(
 
                 canonical = _pick_canonical_id([a, b])
                 other = b if canonical == a else a
+                text_by_id = {ids[k]: texts[k] for k in range(len(ids))}
                 proposals.append(
                     (
                         "merge_superclaims",
                         {
                             "canonicalSuperclaimId": canonical,
+                            "canonicalSuperclaimText": str(text_by_id.get(canonical) or ""),
                             "mergeSuperclaimIds": sorted([a, b]),
                             "removeSuperclaimId": other,
+                            "removeSuperclaimText": str(text_by_id.get(other) or ""),
                             "pairCosine": sij,
                         },
                         f"High TF‑IDF cosine similarity between superclaim texts ({sij:.2f}); consider merging superclaims.",
