@@ -16,7 +16,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from llm_confidence import score_subclaim_to_superclaim_confidence
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 
 _DEFAULT_ENV_PATH = ROOT / ".env"
 load_dotenv(dotenv_path=str(_DEFAULT_ENV_PATH), override=False)
