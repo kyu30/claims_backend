@@ -1,0 +1,2612 @@
+{
+  "claims": {
+    "NC_1": {
+      "current_text": "Natural gas reduces emissions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984504",
+          "action": "seed",
+          "text": "Natural gas reduces emissions",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        },
+        {
+          "timestamp": "2026-04-15T01:21:24.069437",
+          "action": "matched",
+          "text": "Natural gas reduces emissions",
+          "source_article_id": "52",
+          "article_url": "unknown",
+          "source_snippet": "Last winter was one of the warmest on record, so people had to spend less to heat their homes and businesses. That, combined with a \"drilling binge \" in shale gas and new production, made for record low natural gas in prices in April, at less than $2 per million British thermal units (MMBtu).",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_2": {
+      "current_text": "Natural gas is integral to the climate transition",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984508",
+          "action": "seed",
+          "text": "Natural gas is integral to the climate transition",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_3": {
+      "current_text": "Oil spills are part of the every day",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984510",
+          "action": "seed",
+          "text": "Oil spills are part of the every day",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_4": {
+      "current_text": "Oil spills only hurt some animals",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984512",
+          "action": "seed",
+          "text": "Oil spills only hurt some animals",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_5": {
+      "current_text": "Petroleum products support renewable energy",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984513",
+          "action": "seed",
+          "text": "Petroleum products support renewable energy",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_6": {
+      "current_text": "Carbon capture is safe",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984517",
+          "action": "seed",
+          "text": "Carbon capture is safe",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        },
+        {
+          "timestamp": "2026-04-15T01:18:28.655378",
+          "action": "matched",
+          "text": "Carbon capture is safe",
+          "source_article_id": "21",
+          "article_url": "unknown",
+          "source_snippet": "Carbon capture and storage (CCS) is a technology that safely captures CO2 at industrial sources, transports it and injects it permanently deep into the earth, diverting it from the atmosphere and limiting the impact it has on the environment.",
+          "metadata": {
+            "article_id": 13
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:18:47.341289",
+          "action": "matched",
+          "text": "Carbon capture is safe",
+          "source_article_id": "25",
+          "article_url": "unknown",
+          "source_snippet": "ExxonMobil's dedication to reducing emissions with innovative carbon capture technology.",
+          "metadata": {
+            "article_id": 13
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:03:42.161119",
+          "action": "matched",
+          "text": "Carbon capture is safe",
+          "source_article_id": "187",
+          "article_url": "unknown",
+          "source_snippet": "Gas separation and treatment, to improve processes for treating natural gas, lower costs and and optimize fields that are complex to produce. This expertise is also very useful in carbon capture, a Total priority.",
+          "metadata": {
+            "article_id": 85
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:04:04.209643",
+          "action": "matched",
+          "text": "Carbon capture is safe",
+          "source_article_id": "192",
+          "article_url": "unknown",
+          "source_snippet": "\"Energy and operational efficiency, reducing our operations' impact and carbon capture, utilization and storage (CCUS) are the new research fields being explored by PERL.\"",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    },
+    "NC_7": {
+      "current_text": "Carbon capture is needed to fight climate change",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984519",
+          "action": "seed",
+          "text": "Carbon capture is needed to fight climate change",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        },
+        {
+          "timestamp": "2026-04-15T01:18:47.341321",
+          "action": "matched",
+          "text": "Carbon capture is needed to fight climate change",
+          "source_article_id": "25",
+          "article_url": "unknown",
+          "source_snippet": "ExxonMobil's dedication to reducing emissions with innovative carbon capture technology.",
+          "metadata": {
+            "article_id": 13
+          }
+        }
+      ]
+    },
+    "NC_8": {
+      "current_text": "Carbon capture offsets emissions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984521",
+          "action": "seed",
+          "text": "Carbon capture offsets emissions",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        },
+        {
+          "timestamp": "2026-04-15T01:18:28.655410",
+          "action": "matched",
+          "text": "Carbon capture offsets emissions",
+          "source_article_id": "21",
+          "article_url": "unknown",
+          "source_snippet": "Carbon capture and storage (CCS) is a technology that safely captures CO2 at industrial sources, transports it and injects it permanently deep into the earth, diverting it from the atmosphere and limiting the impact it has on the environment.",
+          "metadata": {
+            "article_id": 13
+          }
+        }
+      ]
+    },
+    "NC_9": {
+      "current_text": "Carbon capture will decarbonise industry",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984522",
+          "action": "seed",
+          "text": "Carbon capture will decarbonise industry",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_10": {
+      "current_text": "Carbon capture is widely available",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984524",
+          "action": "seed",
+          "text": "Carbon capture is widely available",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_11": {
+      "current_text": "Renwable energy supports EVs",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984525",
+          "action": "seed",
+          "text": "Renwable energy supports EVs",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_12": {
+      "current_text": "Renewable energy supports fossil fuel extraction",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984527",
+          "action": "seed",
+          "text": "Renewable energy supports fossil fuel extraction",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        },
+        {
+          "timestamp": "2026-04-15T01:22:06.010040",
+          "action": "matched",
+          "text": "Renewable energy supports fossil fuel extraction",
+          "source_article_id": "53",
+          "article_url": "unknown",
+          "source_snippet": "\"cheap gas will completely remove the need for electricity generated by solar or wind.\"",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_13": {
+      "current_text": "We aim to decrease emissions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984529",
+          "action": "seed",
+          "text": "We aim to decrease emissions",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_14": {
+      "current_text": "We can expand fossil fuels whilst reducing emissions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984530",
+          "action": "seed",
+          "text": "We can expand fossil fuels whilst reducing emissions",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        },
+        {
+          "timestamp": "2026-04-15T09:59:23.162034",
+          "action": "matched",
+          "text": "We can expand fossil fuels whilst reducing emissions",
+          "source_article_id": "135",
+          "article_url": "unknown",
+          "source_snippet": "the International Energy Agency's 450 Scenario still assumes a majority fossil fuel energy mix in 2050",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_15": {
+      "current_text": "We are part of the transition to a green economy",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984532",
+          "action": "seed",
+          "text": "We are part of the transition to a green economy",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_16": {
+      "current_text": "We are part of the transition to a green future",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:16:53.984533",
+          "action": "seed",
+          "text": "We are part of the transition to a green future",
+          "source_article_id": "SEED",
+          "article_url": "N/A",
+          "source_snippet": "Initial seed claim",
+          "metadata": {}
+        }
+      ]
+    },
+    "NC_17": {
+      "current_text": "Net zero commitments as collaborative multi-sector solution",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:17:09.387298",
+          "action": "created",
+          "text": "Net zero commitments as collaborative multi-sector solution",
+          "source_article_id": "4",
+          "article_url": "unknown",
+          "source_snippet": "Why Net Zero Isn't Zero-Sum A Look at Collaboration, Cohesion, and Collective Action Across Sectors",
+          "metadata": {
+            "article_id": 11
+          }
+        }
+      ]
+    },
+    "NC_18": {
+      "current_text": "National zero-emissions standard enacted as a climate measure",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:17:43.105624",
+          "action": "created",
+          "text": "National zero-emissions standard enacted as a climate measure",
+          "source_article_id": "10",
+          "article_url": "unknown",
+          "source_snippet": "a national zero-emissions standard was established",
+          "metadata": {
+            "article_id": 11
+          }
+        }
+      ]
+    },
+    "NC_19": {
+      "current_text": "The technology needed to address climate change is already available",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:17:58.336119",
+          "action": "created",
+          "text": "The technology needed to address climate change is already available",
+          "source_article_id": "13",
+          "article_url": "unknown",
+          "source_snippet": "The technology we need is already available to us. We just need to use it.",
+          "metadata": {
+            "article_id": 11
+          }
+        }
+      ]
+    },
+    "NC_20": {
+      "current_text": "Carbon capture scalability and global deployment plans",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:18:28.655437",
+          "action": "created",
+          "text": "Carbon capture scalability and global deployment plans",
+          "source_article_id": "21",
+          "article_url": "unknown",
+          "source_snippet": "Large-scale carbon capture opportunities are in the works around the world, from Houston to Rotterdam to Singapore.",
+          "metadata": {
+            "article_id": 13
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:18:39.917667",
+          "action": "matched",
+          "text": "Carbon capture scalability and global deployment plans",
+          "source_article_id": "23",
+          "article_url": "unknown",
+          "source_snippet": "ExxonMobil and other companies believe a large-scale development of CCS in Houston could store up to 50 million metric tons per year of CO2 by 2030 and double that amount by 2040.",
+          "metadata": {
+            "article_id": 13
+          }
+        }
+      ]
+    },
+    "NC_21": {
+      "current_text": "CO2 transportation and geological storage infrastructure as safe and permanent solution",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:18:35.058471",
+          "action": "created",
+          "text": "CO2 transportation and geological storage infrastructure as safe and permanent solution",
+          "source_article_id": "22",
+          "article_url": "unknown",
+          "source_snippet": "In the greater Houston area, infrastructure would be designed to transport CO2 captured at local industrial facilities and inject it thousands of feet underground into a carefully selected geological formation where it can be safely and permanently stored.",
+          "metadata": {
+            "article_id": 13
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:18:39.917636",
+          "action": "matched",
+          "text": "CO2 transportation and geological storage infrastructure as safe and permanent solution",
+          "source_article_id": "23",
+          "article_url": "unknown",
+          "source_snippet": "ExxonMobil and other companies believe a large-scale development of CCS in Houston could store up to 50 million metric tons per year of CO2 by 2030 and double that amount by 2040.",
+          "metadata": {
+            "article_id": 13
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:18:44.114767",
+          "action": "matched",
+          "text": "CO2 transportation and geological storage infrastructure as safe and permanent solution",
+          "source_article_id": "24",
+          "article_url": "unknown",
+          "source_snippet": "We spoke with Dr. Ganesh Dasari, a researcher and engineer at ExxonMobil, to better understand how CO2 storage sites are carefully and rigorously selected.",
+          "metadata": {
+            "article_id": 13
+          }
+        }
+      ]
+    },
+    "NC_22": {
+      "current_text": "Subsurface CO2 mineralization transforms CO2 into inert material reducing its greenhouse gas properties",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:18:35.058519",
+          "action": "created",
+          "text": "Subsurface CO2 mineralization transforms CO2 into inert material reducing its greenhouse gas properties",
+          "source_article_id": "22",
+          "article_url": "unknown",
+          "source_snippet": "Once underground, this CO2 would gradually harden and lose its properties as a greenhouse gas.",
+          "metadata": {
+            "article_id": 13
+          }
+        }
+      ]
+    },
+    "NC_23": {
+      "current_text": "Electric vehicles reduce local air pollution and enable continuation of car-centric transport models",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:19:25.178027",
+          "action": "created",
+          "text": "Electric vehicles reduce local air pollution and enable continuation of car-centric transport models",
+          "source_article_id": "32",
+          "article_url": "unknown",
+          "source_snippet": "Electric vehicles (EVs) could play an important role in solving local air pollution challenges and facilitating the existence of car-centric transportation models, including ride-hailing.",
+          "metadata": {
+            "article_id": 151
+          }
+        }
+      ]
+    },
+    "NC_24": {
+      "current_text": "Natural gas and hydrogen as competing clean fuel alternatives",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:19:35.172340",
+          "action": "created",
+          "text": "Natural gas and hydrogen as competing clean fuel alternatives",
+          "source_article_id": "35",
+          "article_url": "unknown",
+          "source_snippet": "oil and electric power--and natural gas and hydrogen--will compete as fuel sources.",
+          "metadata": {
+            "article_id": 151
+          }
+        }
+      ]
+    },
+    "NC_25": {
+      "current_text": "LNG industry growth and rapid supply expansion as positive energy development",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:19.230829",
+          "action": "created",
+          "text": "LNG industry growth and rapid supply expansion as positive energy development",
+          "source_article_id": "39",
+          "article_url": "unknown",
+          "source_snippet": "And more is coming, with the industry poised for very rapid supply expansion over the next few years.",
+          "metadata": {
+            "article_id": 171
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:20:50.664666",
+          "action": "matched",
+          "text": "LNG industry growth and rapid supply expansion as positive energy development",
+          "source_article_id": "46",
+          "article_url": "unknown",
+          "source_snippet": "Pipeline expansions due to come on line this fall will unlock additional production.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_26": {
+      "current_text": "Expansion of LNG export capacity as positive market development",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:22.727979",
+          "action": "created",
+          "text": "Expansion of LNG export capacity as positive market development",
+          "source_article_id": "40",
+          "article_url": "unknown",
+          "source_snippet": "New LNG export capacity is being built in the United States, which will make it the third largest exporter by 2020, following recent large additions from Australia and Qatar.",
+          "metadata": {
+            "article_id": 171
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:20:50.664696",
+          "action": "matched",
+          "text": "Expansion of LNG export capacity as positive market development",
+          "source_article_id": "46",
+          "article_url": "unknown",
+          "source_snippet": "The U.S. switched from being the largest prospective LNG importer to becoming a major exporter.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_27": {
+      "current_text": "Environmental policies promote switching from coal to gas-fired power generation, driving natural gas demand growth",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:29.781964",
+          "action": "created",
+          "text": "Environmental policies promote switching from coal to gas-fired power generation, driving natural gas demand growth",
+          "source_article_id": "41",
+          "article_url": "unknown",
+          "source_snippet": "Reforms to increase transparency along with environmental policies designed to encourage switching from coal- to gas-fired power generation could drive long-term growth of China's LNG imports.",
+          "metadata": {
+            "article_id": 171
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:20:38.751118",
+          "action": "matched",
+          "text": "Environmental policies promote switching from coal to gas-fired power generation, driving natural gas demand growth",
+          "source_article_id": "43",
+          "article_url": "unknown",
+          "source_snippet": "A desire to replace oil with natural gas for power generation is driving increases in LNG import capacity in Kuwait, Egypt, Jordan, and the United Arab Emirates.",
+          "metadata": {
+            "article_id": 171
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:20:44.335405",
+          "action": "matched",
+          "text": "Environmental policies promote switching from coal to gas-fired power generation, driving natural gas demand growth",
+          "source_article_id": "45",
+          "article_url": "unknown",
+          "source_snippet": "switching between coal and natural gas for power generation, based on price fluctuations, is common.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_28": {
+      "current_text": "Government support for establishing a gas-based economy as a positive future market signal",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:29.782011",
+          "action": "created",
+          "text": "Government support for establishing a gas-based economy as a positive future market signal",
+          "source_article_id": "41",
+          "article_url": "unknown",
+          "source_snippet": "A government announcement last year to support a \"gas-based economy\" is a promising signal for the future.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_29": {
+      "current_text": "Rapid deployment of floating regasification infrastructure increases LNG market flexibility and access",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:29.782032",
+          "action": "created",
+          "text": "Rapid deployment of floating regasification infrastructure increases LNG market flexibility and access",
+          "source_article_id": "41",
+          "article_url": "unknown",
+          "source_snippet": "Floating regasification infrastructure, which can be built quickly... has been used to address gas shortfalls, thereby increasing flexibility in the LNG market.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_30": {
+      "current_text": "Growth in renewable energy and nuclear power reduces LNG demand in Asia",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:32.561174",
+          "action": "created",
+          "text": "Growth in renewable energy and nuclear power reduces LNG demand in Asia",
+          "source_article_id": "42",
+          "article_url": "unknown",
+          "source_snippet": "Sluggish demand will be driven by increased nuclear power generation in both countries, greater reliance on renewables in Japan and coal in South Korea",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_32": {
+      "current_text": "Ongoing construction of LNG export facilities as evidence of industry expansion",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:50.664725",
+          "action": "created",
+          "text": "Ongoing construction of LNG export facilities as evidence of industry expansion",
+          "source_article_id": "46",
+          "article_url": "unknown",
+          "source_snippet": "And other LNG export facilities are under construction in the Gulf and on the Atlantic coasts.",
+          "metadata": {
+            "article_id": 171
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:27.661703",
+          "action": "matched",
+          "text": "Ongoing construction of LNG export facilities as evidence of industry expansion",
+          "source_article_id": "59",
+          "article_url": "unknown",
+          "source_snippet": "Adding another variable to this already-complicated picture is the infrastructure currently under development in the United States to ship natural gas internationally.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_31": {
+      "current_text": "First liquefaction project as a milestone in LNG industry growth",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:20:50.664750",
+          "action": "created",
+          "text": "First liquefaction project as a milestone in LNG industry growth",
+          "source_article_id": "46",
+          "article_url": "unknown",
+          "source_snippet": "Sabine Pass LNG, the first liquefaction project in the U.S. Lower 48, began operation in 2016.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_36": {
+      "current_text": "U.S. LNG exports will act as a flexible swing supply to stabilize global markets",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:06.458428",
+          "action": "created",
+          "text": "U.S. LNG exports will act as a flexible swing supply to stabilize global markets",
+          "source_article_id": "47",
+          "article_url": "unknown",
+          "source_snippet": "Price signals will tend to push U.S. exports into a swing role that's unusual for LNG projects.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_35": {
+      "current_text": "U.S. LNG prices anchored by marginal production and delivery costs to strategic markets",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:06.458471",
+          "action": "created",
+          "text": "U.S. LNG prices anchored by marginal production and delivery costs to strategic markets",
+          "source_article_id": "47",
+          "article_url": "unknown",
+          "source_snippet": "A potential floor for these prices is the short-run marginal cost of delivering U.S. LNG to the global residual market--Europe.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_34": {
+      "current_text": "Rapid expansion of LNG supply capacity outpaces global demand, pressuring prices downward",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:06.458495",
+          "action": "created",
+          "text": "Rapid expansion of LNG supply capacity outpaces global demand, pressuring prices downward",
+          "source_article_id": "47",
+          "article_url": "unknown",
+          "source_snippet": "With new LNG supply capacity building at a quicker pace than global demand, IHS Markit expects downward pressure on global LNG and gas prices.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_33": {
+      "current_text": "The U.S. natural gas industry can dynamically adjust production to market demand",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:06.458519",
+          "action": "created",
+          "text": "The U.S. natural gas industry can dynamically adjust production to market demand",
+          "source_article_id": "47",
+          "article_url": "unknown",
+          "source_snippet": "The U.S. gas upstream has a unique ability to ramp production up or down based on fluctuations in prices.",
+          "metadata": {
+            "article_id": 171
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:27.661737",
+          "action": "matched",
+          "text": "The U.S. natural gas industry can dynamically adjust production to market demand",
+          "source_article_id": "59",
+          "article_url": "unknown",
+          "source_snippet": "Once the U.S. capacity to convert to and export LNG spikes, domestic natural gas prices will adjust up.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_37": {
+      "current_text": "The U.S. gas industry will become a dominant flexible swing producer in the global LNG market",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:06.458544",
+          "action": "created",
+          "text": "The U.S. gas industry will become a dominant flexible swing producer in the global LNG market",
+          "source_article_id": "47",
+          "article_url": "unknown",
+          "source_snippet": "The U.S. gas industry, with its new export capacity, is thus poised to assume a position never imagined before--as the swing producer in the global LNG market.",
+          "metadata": {
+            "article_id": 171
+          }
+        }
+      ]
+    },
+    "NC_38": {
+      "current_text": "LNG-powered ships as innovative sustainable transportation",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:11.882409",
+          "action": "created",
+          "text": "LNG-powered ships as innovative sustainable transportation",
+          "source_article_id": "49",
+          "article_url": "unknown",
+          "source_snippet": "LNG powered ships changing the face of transportation",
+          "metadata": {
+            "article_id": 197
+          }
+        }
+      ]
+    },
+    "NC_39": {
+      "current_text": "Natural gas production and low prices boost the domestic economy",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:24.069478",
+          "action": "created",
+          "text": "Natural gas production and low prices boost the domestic economy",
+          "source_article_id": "52",
+          "article_url": "unknown",
+          "source_snippet": "This phenomenon has boosted the U.S. economy to the tune of more than $100 billion annually, by one estimate.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_40": {
+      "current_text": "Low fossil fuel prices are used to argue against investments in alternative energy and energy efficiency",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:21:24.069497",
+          "action": "created",
+          "text": "Low fossil fuel prices are used to argue against investments in alternative energy and energy efficiency",
+          "source_article_id": "52",
+          "article_url": "unknown",
+          "source_snippet": "With such low prices, the thinking goes, investments in alternative energy and energy efficiency don't make sense.",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:11.170218",
+          "action": "matched",
+          "text": "Low fossil fuel prices are used to argue against investments in alternative energy and energy efficiency",
+          "source_article_id": "55",
+          "article_url": "unknown",
+          "source_snippet": "With today's price of about $3.50, energy companies' current position appears to make some sense.",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:16.805678",
+          "action": "matched",
+          "text": "Low fossil fuel prices are used to argue against investments in alternative energy and energy efficiency",
+          "source_article_id": "56",
+          "article_url": "unknown",
+          "source_snippet": "those who say cheap natural gas is killing alternatives are doing the math wrong.",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:42.304584",
+          "action": "matched",
+          "text": "Low fossil fuel prices are used to argue against investments in alternative energy and energy efficiency",
+          "source_article_id": "61",
+          "article_url": "unknown",
+          "source_snippet": "ignore hot-air arguments about a new era of price stability and the low prices of natural gas.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_41": {
+      "current_text": "Low natural gas prices discourage energy efficiency investments",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:06.010258",
+          "action": "created",
+          "text": "Low natural gas prices discourage energy efficiency investments",
+          "source_article_id": "53",
+          "article_url": "unknown",
+          "source_snippet": "\"current low prices were making many energy efficiency projects less attractive, since it would take too long to show a return on investment.\"",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:11.170246",
+          "action": "matched",
+          "text": "Low natural gas prices discourage energy efficiency investments",
+          "source_article_id": "55",
+          "article_url": "unknown",
+          "source_snippet": "It's true that in the short term, cheap natural gas makes investments in energy efficiency less profitable and slower to show a financial return.",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:21.211786",
+          "action": "matched",
+          "text": "Low natural gas prices discourage energy efficiency investments",
+          "source_article_id": "57",
+          "article_url": "unknown",
+          "source_snippet": "reduce the amount of natural gas used to generate electricity",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_42": {
+      "current_text": "Energy efficiency mandates are obsolete due to shale gas and low energy prices",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:08.449871",
+          "action": "created",
+          "text": "Energy efficiency mandates are obsolete due to shale gas and low energy prices",
+          "source_article_id": "54",
+          "article_url": "unknown",
+          "source_snippet": "\"the current energy efficiency mandates don't make sense anymore. The landscape has 'radically changed,' and with the discovery of shale gas resources and low energy prices, 'the factors driving the mandates no longer exist.'\"",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_43": {
+      "current_text": "Natural gas wellhead price underestimates total cost including transportation and price volatility costs",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:16.805728",
+          "action": "created",
+          "text": "Natural gas wellhead price underestimates total cost including transportation and price volatility costs",
+          "source_article_id": "56",
+          "article_url": "unknown",
+          "source_snippet": "the current natural gas wellhead price makes efficiency investments unwise, they're excluding the transportation costs and the cost of insuring against price volatility.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_44": {
+      "current_text": "Future natural gas prices expected to rise, making energy efficiency increasingly cost-effective",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:16.805750",
+          "action": "created",
+          "text": "Future natural gas prices expected to rise, making energy efficiency increasingly cost-effective",
+          "source_article_id": "56",
+          "article_url": "unknown",
+          "source_snippet": "An RMI analysis found that right now, the all-in cost of natural gas is closer to $6-$8 per MMBtu. Not only that, but the wellhead price is predicted to rise to $5-$7 per MMBtu over the next five years.",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:42.304548",
+          "action": "matched",
+          "text": "Future natural gas prices expected to rise, making energy efficiency increasingly cost-effective",
+          "source_article_id": "61",
+          "article_url": "unknown",
+          "source_snippet": "As technology improves and natural gas prices continue to rise, investments in energy efficiency will make more and more sense to utilities.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_45": {
+      "current_text": "Energy efficiency protects companies against energy price volatility and supports grid reliability",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:21.211837",
+          "action": "created",
+          "text": "Energy efficiency protects companies against energy price volatility and supports grid reliability",
+          "source_article_id": "57",
+          "article_url": "unknown",
+          "source_snippet": "energy efficiency measures help lower the demand for electricity, they can help protect companies against price volatility while maintaining the reliability of the electrical grid",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:24.691065",
+          "action": "matched",
+          "text": "Energy efficiency protects companies against energy price volatility and supports grid reliability",
+          "source_article_id": "58",
+          "article_url": "unknown",
+          "source_snippet": "\"Natural gas prices are far more volatile than that of oil prices, making energy efficiency an especially useful bulwark against price instability.\"",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_46": {
+      "current_text": "Gas-targeted efficiency programs reduce end-user gas consumption",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:21.211861",
+          "action": "created",
+          "text": "Gas-targeted efficiency programs reduce end-user gas consumption",
+          "source_article_id": "57",
+          "article_url": "unknown",
+          "source_snippet": "gas-targeted efficiency programs that directly reduce the end-use of gas for consumers",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_47": {
+      "current_text": "Energy efficiency creates jobs and encourages long-term economic investment",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:24.691113",
+          "action": "created",
+          "text": "Energy efficiency creates jobs and encourages long-term economic investment",
+          "source_article_id": "58",
+          "article_url": "unknown",
+          "source_snippet": "\"Efficiency lowers customers' utility bills, it's better for the environment, it creates jobs, and it encourages long-term economic investment.\"",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_49": {
+      "current_text": "Utility profit model disincentivizes energy efficiency investments because earnings depend on energy sales volume",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:33.578066",
+          "action": "created",
+          "text": "Utility profit model disincentivizes energy efficiency investments because earnings depend on energy sales volume",
+          "source_article_id": "60",
+          "article_url": "unknown",
+          "source_snippet": "Under traditional regulatory models of utility rates, a utility that spends money to reduce energy use for its customers ends up ... losing money. If you make more money by producing more energy, why would you work to produce less energy and make less money?",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:42.304617",
+          "action": "matched",
+          "text": "Utility profit model disincentivizes energy efficiency investments because earnings depend on energy sales volume",
+          "source_article_id": "61",
+          "article_url": "unknown",
+          "source_snippet": "regulations will get better at realigning incentives for producing less energy.",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_48": {
+      "current_text": "Regulatory barriers prevent utilities from investing in energy efficiency",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:22:33.578203",
+          "action": "created",
+          "text": "Regulatory barriers prevent utilities from investing in energy efficiency",
+          "source_article_id": "60",
+          "article_url": "unknown",
+          "source_snippet": "The real thorny issue with energy efficiency isn't low natural gas prices, but the regulatory barriers keeping utility companies from making investments that would lower what their customers pay.",
+          "metadata": {
+            "article_id": 200
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:22:42.304574",
+          "action": "matched",
+          "text": "Regulatory barriers prevent utilities from investing in energy efficiency",
+          "source_article_id": "61",
+          "article_url": "unknown",
+          "source_snippet": "states and other stakeholders should keep pushing for ambitious energy efficiency standards",
+          "metadata": {
+            "article_id": 200
+          }
+        }
+      ]
+    },
+    "NC_50": {
+      "current_text": "Investing in cleantech innovations and new energy business models",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:04.496238",
+          "action": "created",
+          "text": "Investing in cleantech innovations and new energy business models",
+          "source_article_id": "67",
+          "article_url": "unknown",
+          "source_snippet": "We focus on investments in energy technologies involving cutting-edge innovations and cleantechs but also new business models.",
+          "metadata": {
+            "article_id": 21
+          }
+        }
+      ]
+    },
+    "NC_52": {
+      "current_text": "Hosting or sponsoring symposiums/events to promote circular economy and net zero intentions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:15.075514",
+          "action": "created",
+          "text": "Hosting or sponsoring symposiums/events to promote circular economy and net zero intentions",
+          "source_article_id": "70",
+          "article_url": "unknown",
+          "source_snippet": "\"GC Circular Living Symposium 2022: Together to Net Zero\", notable international thought leaders in the space got together with local government officials, thought leaders from the private sector and entrepreneurs to share their ideas for Thailand to spearhead the world's efforts towards circular in action.",
+          "metadata": {
+            "article_id": 229
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:23:34.541273",
+          "action": "matched",
+          "text": "Hosting or sponsoring symposiums/events to promote circular economy and net zero intentions",
+          "source_article_id": "75",
+          "article_url": "unknown",
+          "source_snippet": "That's why, GC has been acting as an enabler towards achieving Net Zero target by taking the initiative to host the international symposium for the third year aiming to encourage all sectors to put into action to achieve the Net Zero target.",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_51": {
+      "current_text": "Commitment to reduce greenhouse gas emissions and reach net zero without specifics",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:15.075559",
+          "action": "created",
+          "text": "Commitment to reduce greenhouse gas emissions and reach net zero without specifics",
+          "source_article_id": "70",
+          "article_url": "unknown",
+          "source_snippet": "PTT Global Chemical Public Company Limited (GC), a longtime leader in the chemical industry, has invested deeply into their commitment to reduce greenhouse gas emissions and reach Net Zero.",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_54": {
+      "current_text": "Constructing alliances and ecosystems to include multiple stakeholders to achieve Net Zero together",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:26.639816",
+          "action": "created",
+          "text": "Constructing alliances and ecosystems to include multiple stakeholders to achieve Net Zero together",
+          "source_article_id": "73",
+          "article_url": "unknown",
+          "source_snippet": "\"It is our responsibility to construct alliances and an ecosystem that can accommodate all entities - big or small - to join us to Net Zero under the Together to Net Zero concept.\"",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_53": {
+      "current_text": "Driving sustainable climate actions through innovations and technology to become a low-carbon organization",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:26.639850",
+          "action": "created",
+          "text": "Driving sustainable climate actions through innovations and technology to become a low-carbon organization",
+          "source_article_id": "73",
+          "article_url": "unknown",
+          "source_snippet": "\"GC drives sustainable climate actions in many dimensions, including developing innovations and applying technology to meet the challenging goal of becoming a low-carbon organization.\"",
+          "metadata": {
+            "article_id": 229
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:04:04.209791",
+          "action": "matched",
+          "text": "Driving sustainable climate actions through innovations and technology to become a low-carbon organization",
+          "source_article_id": "192",
+          "article_url": "unknown",
+          "source_snippet": "\"Energy and operational efficiency, reducing our operations' impact and carbon capture, utilization and storage (CCUS) are the new research fields being explored by PERL.\"",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    },
+    "NC_55": {
+      "current_text": "Low carbon footprint house using recycled, sustainable materials and bioplastics",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:42.520251",
+          "action": "created",
+          "text": "Low carbon footprint house using recycled, sustainable materials and bioplastics",
+          "source_article_id": "76",
+          "article_url": "unknown",
+          "source_snippet": "house of the future made from recycled materials, sustainable materials and bioplastics will have a low carbon footprint not only in its construction, but within the low-energy and eco-friendly products and appliances",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_57": {
+      "current_text": "Use of plant-based dishes and bioplastic containers as part of a low carbon or sustainable initiative",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:42.520298",
+          "action": "created",
+          "text": "Use of plant-based dishes and bioplastic containers as part of a low carbon or sustainable initiative",
+          "source_article_id": "76",
+          "article_url": "unknown",
+          "source_snippet": "plant-based dishes we reserved in bioplastic containers at the cafe",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_56": {
+      "current_text": "Carbon reduction through forest planting, carbon forestation greenhouses, and bio-energy limiting waste",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:42.520323",
+          "action": "created",
+          "text": "Carbon reduction through forest planting, carbon forestation greenhouses, and bio-energy limiting waste",
+          "source_article_id": "76",
+          "article_url": "unknown",
+          "source_snippet": "smart farming zone where visitors could learn how to plant a forest for carbon reduction, a carbon forestation plastic greenhouse model, and a demonstration of how bio-energy limits waste",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_58": {
+      "current_text": "Use of renewable energy and innovation to claim carbon neutrality and energy consumption reduction",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:45.165286",
+          "action": "created",
+          "text": "Use of renewable energy and innovation to claim carbon neutrality and energy consumption reduction",
+          "source_article_id": "77",
+          "article_url": "unknown",
+          "source_snippet": "The zone applied both renewable energy and innovation that ensure safety and reduced energy consumption.",
+          "metadata": {
+            "article_id": 229
+          }
+        }
+      ]
+    },
+    "NC_60": {
+      "current_text": "Plastics derived from fossil fuels enable innovation and improvements in daily life and various sectors",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:56.649923",
+          "action": "created",
+          "text": "Plastics derived from fossil fuels enable innovation and improvements in daily life and various sectors",
+          "source_article_id": "80",
+          "article_url": "unknown",
+          "source_snippet": "It is quietly enabling innovators young and old to solve everyday challenges, and leading to some of the most exciting innovations in sports, arts and technology.",
+          "metadata": {
+            "article_id": 241
+          }
+        },
+        {
+          "timestamp": "2026-04-15T01:24:12.212553",
+          "action": "matched",
+          "text": "Plastics derived from fossil fuels enable innovation and improvements in daily life and various sectors",
+          "source_article_id": "84",
+          "article_url": "unknown",
+          "source_snippet": "Using lower-cost thermoplastics, Campana is able to help animals walk and run again, and change what veterinarians think is possible.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_59": {
+      "current_text": "Natural gas and oil are essential raw materials for plastic production",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:23:56.649965",
+          "action": "created",
+          "text": "Natural gas and oil are essential raw materials for plastic production",
+          "source_article_id": "80",
+          "article_url": "unknown",
+          "source_snippet": "A century later, most plastics are produced when natural gas and oil are refined and combined with other compounds.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_61": {
+      "current_text": "Plastics derived from fossil fuels enable innovation and improvements in daily life and various sectors",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:24:01.758795",
+          "action": "created",
+          "text": "Plastics derived from fossil fuels enable innovation and improvements in daily life and various sectors",
+          "source_article_id": "81",
+          "article_url": "unknown",
+          "source_snippet": "plastic is making what was once impossible--possible",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_62": {
+      "current_text": "Advancements in fossil fuel-derived plastics enable improved medical solutions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T01:24:37.300610",
+          "action": "created",
+          "text": "Advancements in fossil fuel-derived plastics enable improved medical solutions",
+          "source_article_id": "92",
+          "article_url": "unknown",
+          "source_snippet": "Over time, advancements in materials and plastics allowed for more solutions for patients.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_63": {
+      "current_text": "Claims about durable or innovative uses of fossil fuel-derived plastics enabling creative or artistic applications",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:10.501754",
+          "action": "created",
+          "text": "Claims about durable or innovative uses of fossil fuel-derived plastics enabling creative or artistic applications",
+          "source_article_id": "104",
+          "article_url": "unknown",
+          "source_snippet": "The headset is made by heating and forming PC-ABS plastic with an injection mold. The result is a customized, hard, durable, break-resistant substance that allows art to come to life.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_64": {
+      "current_text": "Polyethylene plastic properties highlighted as beneficial for beverage packaging",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:33.544638",
+          "action": "created",
+          "text": "Polyethylene plastic properties highlighted as beneficial for beverage packaging",
+          "source_article_id": "111",
+          "article_url": "unknown",
+          "source_snippet": "Lightweight, strong and translucent are properties that make polyethylene a good vessel for water and other beverages.",
+          "metadata": {
+            "article_id": 241
+          }
+        },
+        {
+          "timestamp": "2026-04-15T09:57:37.227819",
+          "action": "matched",
+          "text": "Polyethylene plastic properties highlighted as beneficial for beverage packaging",
+          "source_article_id": "112",
+          "article_url": "unknown",
+          "source_snippet": "Polyethylene is a stretchable material that is great for keeping air and moisture out, while its translucence allows us to see in.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_65": {
+      "current_text": "Promotion of fossil fuel-based plastics as enabling safe and convenient food and beverage storage",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:33.544681",
+          "action": "created",
+          "text": "Promotion of fossil fuel-based plastics as enabling safe and convenient food and beverage storage",
+          "source_article_id": "111",
+          "article_url": "unknown",
+          "source_snippet": "Lightweight, strong and translucent are properties that make polyethylene a good vessel for water and other beverages.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_67": {
+      "current_text": "Implication that using lightweight materials enables continued use of fossil fuels by improving fuel efficiency",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:43.379788",
+          "action": "created",
+          "text": "Implication that using lightweight materials enables continued use of fossil fuels by improving fuel efficiency",
+          "source_article_id": "113",
+          "article_url": "unknown",
+          "source_snippet": "The heavier a plane is, the more fuel it takes to fly. That explains why super-strong-yet-light carbon fiber is taking flight among aircraft makers.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_66": {
+      "current_text": "Promotion of advanced lightweight materials to reduce fuel consumption in aviation",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:43.383687",
+          "action": "created",
+          "text": "Promotion of advanced lightweight materials to reduce fuel consumption in aviation",
+          "source_article_id": "113",
+          "article_url": "unknown",
+          "source_snippet": "The heavier a plane is, the more fuel it takes to fly. That explains why super-strong-yet-light carbon fiber is taking flight among aircraft makers.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_68": {
+      "current_text": "Claims about polyethylene plastic properties improving material strength and lightness",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:48.433582",
+          "action": "created",
+          "text": "Claims about polyethylene plastic properties improving material strength and lightness",
+          "source_article_id": "115",
+          "article_url": "unknown",
+          "source_snippet": "That's the answer. You've heard of bullet-proof vests made from Kevlar, but those made with polyethylene can be 25% lighter and 40% stronger.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_69": {
+      "current_text": "Promotion of fossil fuel-derived plastic material properties (durability, flexibility, low cost) for consumer product uses",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:51.978977",
+          "action": "created",
+          "text": "Promotion of fossil fuel-derived plastic material properties (durability, flexibility, low cost) for consumer product uses",
+          "source_article_id": "116",
+          "article_url": "unknown",
+          "source_snippet": "Durability, flexibility and low cost are all qualities that make PC-ABS a material manufacturers like to call on for cell phone cases.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_70": {
+      "current_text": "Promotion of fossil fuel-derived plastic (PC-ABS) properties as essential for power supply equipment durability",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:55.354390",
+          "action": "created",
+          "text": "Promotion of fossil fuel-derived plastic (PC-ABS) properties as essential for power supply equipment durability",
+          "source_article_id": "117",
+          "article_url": "unknown",
+          "source_snippet": "With its high heat resistance and durability, PC-ABS is often used for chargers and adapters which supply or convert power.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_71": {
+      "current_text": "Promotion of fossil fuel-derived carbon fiber materials as preferred sustainable alternatives to traditional materials",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:57:59.558085",
+          "action": "created",
+          "text": "Promotion of fossil fuel-derived carbon fiber materials as preferred sustainable alternatives to traditional materials",
+          "source_article_id": "118",
+          "article_url": "unknown",
+          "source_snippet": "Stiff, light and strong carbon fiber is becoming a preferred material on the courts, replacing wood.",
+          "metadata": {
+            "article_id": 241
+          }
+        }
+      ]
+    },
+    "NC_72": {
+      "current_text": "Diesel is essential and critical for modern life and transportation",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:58:11.275758",
+          "action": "created",
+          "text": "Diesel is essential and critical for modern life and transportation",
+          "source_article_id": "119",
+          "article_url": "unknown",
+          "source_snippet": "Diesel plays a critical role in enabling modern life.",
+          "metadata": {
+            "article_id": 244
+          }
+        }
+      ]
+    },
+    "NC_73": {
+      "current_text": "Diesel's energy density enables critical transportation sectors and global supply chains",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:58:11.275797",
+          "action": "created",
+          "text": "Diesel's energy density enables critical transportation sectors and global supply chains",
+          "source_article_id": "119",
+          "article_url": "unknown",
+          "source_snippet": "This high-energy fuel packs the power needed for trucking, aviation and maritime transportation--which helps transport people around the world and goods from manufacturing sites to our doorsteps.",
+          "metadata": {
+            "article_id": 244
+          }
+        }
+      ]
+    },
+    "NC_75": {
+      "current_text": "Use of renewable diesel as a solution to reduce greenhouse gas emissions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:58:16.789958",
+          "action": "created",
+          "text": "Use of renewable diesel as a solution to reduce greenhouse gas emissions",
+          "source_article_id": "120",
+          "article_url": "unknown",
+          "source_snippet": "That's where diesel made from renewable sources comes in.",
+          "metadata": {
+            "article_id": 244
+          }
+        },
+        {
+          "timestamp": "2026-04-15T09:58:22.721165",
+          "action": "matched",
+          "text": "Use of renewable diesel as a solution to reduce greenhouse gas emissions",
+          "source_article_id": "122",
+          "article_url": "unknown",
+          "source_snippet": "what creating renewable diesel means to them and to the world of transportation",
+          "metadata": {
+            "article_id": 244
+          }
+        }
+      ]
+    },
+    "NC_74": {
+      "current_text": "Diesel is essential for international commerce and global development despite its carbon footprint",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:58:16.789997",
+          "action": "created",
+          "text": "Diesel is essential for international commerce and global development despite its carbon footprint",
+          "source_article_id": "120",
+          "article_url": "unknown",
+          "source_snippet": "Diesel drives international commerce and global development, but this traditional fuel also has a carbon footprint.",
+          "metadata": {
+            "article_id": 244
+          }
+        }
+      ]
+    },
+    "NC_77": {
+      "current_text": "Promotion of renewable diesel as an effective drop-in fuel replacing traditional diesel",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:58:21.059974",
+          "action": "created",
+          "text": "Promotion of renewable diesel as an effective drop-in fuel replacing traditional diesel",
+          "source_article_id": "121",
+          "article_url": "unknown",
+          "source_snippet": "This cutting-edge facility will use locally sourced biofeedstock, supplemented by blue hydrogen with carbon capture and storage technology, to create lower-emission, renewable diesel that functions similarly to its traditional counterpart.",
+          "metadata": {
+            "article_id": 244
+          }
+        }
+      ]
+    },
+    "NC_76": {
+      "current_text": "Use of blue hydrogen with carbon capture to produce lower-emission renewable diesel",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:58:21.060017",
+          "action": "created",
+          "text": "Use of blue hydrogen with carbon capture to produce lower-emission renewable diesel",
+          "source_article_id": "121",
+          "article_url": "unknown",
+          "source_snippet": "This cutting-edge facility will use locally sourced biofeedstock, supplemented by blue hydrogen with carbon capture and storage technology, to create lower-emission, renewable diesel that functions similarly to its traditional counterpart.",
+          "metadata": {
+            "article_id": 244
+          }
+        }
+      ]
+    },
+    "NC_78": {
+      "current_text": "Investment in digital technology startups to improve future energy production",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:21.247461",
+          "action": "created",
+          "text": "Investment in digital technology startups to improve future energy production",
+          "source_article_id": "134",
+          "article_url": "unknown",
+          "source_snippet": "Its stake in the fledging business not only lets it embrace the use of digital tech in the energy industry now, it will help the company produce better energy in the future.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_80": {
+      "current_text": "Smart grids improve energy supply-demand balance using the most suitable energy sources",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:27.502359",
+          "action": "created",
+          "text": "Smart grids improve energy supply-demand balance using the most suitable energy sources",
+          "source_article_id": "136",
+          "article_url": "unknown",
+          "source_snippet": "The best-known example is smart grids, which will balance energy supply and demand more efficiently, when and as needed, using the sources best suited to the purpose.",
+          "metadata": {
+            "article_id": 44
+          }
+        },
+        {
+          "timestamp": "2026-04-15T09:59:33.008235",
+          "action": "matched",
+          "text": "Smart grids improve energy supply-demand balance using the most suitable energy sources",
+          "source_article_id": "138",
+          "article_url": "unknown",
+          "source_snippet": "But smart grids aren't the only application of digital to energy.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_79": {
+      "current_text": "Digital technology optimizes energy supply management",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:27.502380",
+          "action": "created",
+          "text": "Digital technology optimizes energy supply management",
+          "source_article_id": "136",
+          "article_url": "unknown",
+          "source_snippet": "the management of the world's fast-changing energy supply will be optimized by improving its day-to-day functioning in a way only digital technology can support.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_81": {
+      "current_text": "Digital technology optimizes fossil fuel extraction and production processes",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:33.008275",
+          "action": "created",
+          "text": "Digital technology optimizes fossil fuel extraction and production processes",
+          "source_article_id": "138",
+          "article_url": "unknown",
+          "source_snippet": "Even in so-called \"hard\" sectors such as extraction and production, digital technology can play a significant role, if only to control inputs and outputs.",
+          "metadata": {
+            "article_id": 44
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:03:42.161089",
+          "action": "matched",
+          "text": "Digital technology optimizes fossil fuel extraction and production processes",
+          "source_article_id": "187",
+          "article_url": "unknown",
+          "source_snippet": "Gas separation and treatment, to improve processes for treating natural gas, lower costs and and optimize fields that are complex to produce. This expertise is also very useful in carbon capture, a Total priority.",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    },
+    "NC_82": {
+      "current_text": "Planned changes in fossil fuel company business models framed as advancing 'responsible energy'",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:40.932126",
+          "action": "created",
+          "text": "Planned changes in fossil fuel company business models framed as advancing 'responsible energy'",
+          "source_article_id": "140",
+          "article_url": "unknown",
+          "source_snippet": "\"Discussions with its executives moved quickly and we won them over by talking about the planned changes in Total's business model. This gave AutoGrid a preview of the opportunities for it in the responsible energy field.\"",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_83": {
+      "current_text": "Investment in energy management software framed as enabling smarter or more flexible energy use",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:40.932166",
+          "action": "created",
+          "text": "Investment in energy management software framed as enabling smarter or more flexible energy use",
+          "source_article_id": "140",
+          "article_url": "unknown",
+          "source_snippet": "\"Established in 2011, it is one of the most advanced in the world at managing the flexibility offered by assets in the home and by distributed and centralized power grids.\"",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_84": {
+      "current_text": "Technology enabling integrated management of both fossil fuel and renewable energy sources",
+      "history": [
+        {
+          "timestamp": "2026-04-15T09:59:45.337900",
+          "action": "created",
+          "text": "Technology enabling integrated management of both fossil fuel and renewable energy sources",
+          "source_article_id": "142",
+          "article_url": "unknown",
+          "source_snippet": "This technology applies to all types of energy, whether based on fossil fuels or renewables.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_86": {
+      "current_text": "Use of digital technology to optimize integration across fossil fuel and renewable energy business activities for customer solutions",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:00:28.714398",
+          "action": "created",
+          "text": "Use of digital technology to optimize integration across fossil fuel and renewable energy business activities for customer solutions",
+          "source_article_id": "150",
+          "article_url": "unknown",
+          "source_snippet": "Its ultimate goal is to make the most of the way its activities mesh in order to offer customers integrated, optimized solutions based on digital technology.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_85": {
+      "current_text": "Expanding fossil fuel company activities into integrated power marketing, distributed generation, and storage",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:00:28.714471",
+          "action": "created",
+          "text": "Expanding fossil fuel company activities into integrated power marketing, distributed generation, and storage",
+          "source_article_id": "150",
+          "article_url": "unknown",
+          "source_snippet": "Total is now getting deeper into the power value chain. From production, the group is expanding into marketing, distributed generation and storage.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_87": {
+      "current_text": "Investment in digital technology for integrated energy feed-in and distribution management",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:00:31.662879",
+          "action": "created",
+          "text": "Investment in digital technology for integrated energy feed-in and distribution management",
+          "source_article_id": "151",
+          "article_url": "unknown",
+          "source_snippet": "\"We need a software layer like the one AutoGrid offers to link our different assets,\" says Christophe Tonion. \"Even though this market still depends on varied regulations and economic factors such as the cost of storing power, tomorrow's power grids won't be able to function effectively without efficient feed-in and distribution management. Our investment in AutoGrid will enable us to learn a technology and to do so early enough in a market that is still new.\"",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_88": {
+      "current_text": "Demand response reduces reliance on fossil fuel power plants by replacing their need",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:00:38.965521",
+          "action": "created",
+          "text": "Demand response reduces reliance on fossil fuel power plants by replacing their need",
+          "source_article_id": "154",
+          "article_url": "unknown",
+          "source_snippet": "Demand response reduces, or eliminates, the need to resort to gas-, fuel oil- or coal-fired power plants, which can be started up quickly but are bigger polluters and carbon emitters.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_90": {
+      "current_text": "Use of pricing incentives to discourage power consumption during grid stress periods as demand response",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:00:43.488099",
+          "action": "created",
+          "text": "Use of pricing incentives to discourage power consumption during grid stress periods as demand response",
+          "source_article_id": "155",
+          "article_url": "unknown",
+          "source_snippet": "Individuals may be incentivized through specific rates \"discouraging\" them from using power when the grid is stressed.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_89": {
+      "current_text": "Demand response involves asking users to reduce grid power use by shutting down equipment or starting onsite generators",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:00:43.488144",
+          "action": "created",
+          "text": "Demand response involves asking users to reduce grid power use by shutting down equipment or starting onsite generators",
+          "source_article_id": "155",
+          "article_url": "unknown",
+          "source_snippet": "The usual way to manage demand response is to ask users to draw less from the grid. Customers may be asked to shut down production equipment, for example, or even to start up a generator on site.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_93": {
+      "current_text": "Industrial equipment load control as part of energy management without losing efficiency or safety",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:05.259232",
+          "action": "created",
+          "text": "Industrial equipment load control as part of energy management without losing efficiency or safety",
+          "source_article_id": "156",
+          "article_url": "unknown",
+          "source_snippet": "In industry, a pump, air-conditioning system or battery could be controlled -- shut off and restarted -- in the same way without compromising site efficiency or safety.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_92": {
+      "current_text": "Demand-side energy management reduces consumer usage temporarily without comfort loss",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:05.259274",
+          "action": "created",
+          "text": "Demand-side energy management reduces consumer usage temporarily without comfort loss",
+          "source_article_id": "156",
+          "article_url": "unknown",
+          "source_snippet": "For example, household heating could be shut off for 10 minutes without significantly interfering with user comfort.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_95": {
+      "current_text": "Smart consumption balancing claimed as a practical energy solution enabled by digital tech",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:05.259303",
+          "action": "created",
+          "text": "Smart consumption balancing claimed as a practical energy solution enabled by digital tech",
+          "source_article_id": "156",
+          "article_url": "unknown",
+          "source_snippet": "balances consumption through smart management",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_91": {
+      "current_text": "Smart energy consumption management technology as a solution to optimize energy use",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:05.259326",
+          "action": "created",
+          "text": "Smart energy consumption management technology as a solution to optimize energy use",
+          "source_article_id": "156",
+          "article_url": "unknown",
+          "source_snippet": "The other solution, made possible by technologies such as the ones proposed by AutoGrid, balances consumption through smart management.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_96": {
+      "current_text": "Claims that temporary shutdowns enabled by smart management do not impair industrial site safety or efficiency",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:05.259351",
+          "action": "created",
+          "text": "Claims that temporary shutdowns enabled by smart management do not impair industrial site safety or efficiency",
+          "source_article_id": "156",
+          "article_url": "unknown",
+          "source_snippet": "shut off and restarted -- in the same way without compromising site efficiency or safety",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_94": {
+      "current_text": "Use of smart management technology to optimize industrial energy consumption and reduce fossil fuel demand",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:05.259376",
+          "action": "created",
+          "text": "Use of smart management technology to optimize industrial energy consumption and reduce fossil fuel demand",
+          "source_article_id": "156",
+          "article_url": "unknown",
+          "source_snippet": "In industry, a pump, air-conditioning system or battery could be controlled -- shut off and restarted -- in the same way without compromising site efficiency or safety.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_97": {
+      "current_text": "Economies of scale in smart metering enable demand response that lowers power bills and reduces environmental impact",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:08.150091",
+          "action": "created",
+          "text": "Economies of scale in smart metering enable demand response that lowers power bills and reduces environmental impact",
+          "source_article_id": "157",
+          "article_url": "unknown",
+          "source_snippet": "By multiplying the number of connected \"things\" such as smart meters in private homes, economies of scale would ensure balance and demand response in a way virtually unfelt by users -- resulting in lower power bills and a smaller environmental tab.",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_100": {
+      "current_text": "Implied claim of company commitment or alignment with 450 Scenario climate pathway",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:22.563035",
+          "action": "created",
+          "text": "Implied claim of company commitment or alignment with 450 Scenario climate pathway",
+          "source_article_id": "159",
+          "article_url": "unknown",
+          "source_snippet": "The 450 Scenario sets out an energy pathway consistent with the goal of limiting the global increase in temperature to 2 degreesC by limiting concentration of greenhouse gases in the atmosphere to around 450 parts per million of CO2 .",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_98": {
+      "current_text": "Reference to '450 Scenario' as a credible climate pathway consistent with 2°C target",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:22.563080",
+          "action": "created",
+          "text": "Reference to '450 Scenario' as a credible climate pathway consistent with 2°C target",
+          "source_article_id": "159",
+          "article_url": "unknown",
+          "source_snippet": "The 450 Scenario sets out an energy pathway consistent with the goal of limiting the global increase in temperature to 2 degreesC by limiting concentration of greenhouse gases in the atmosphere to around 450 parts per million of CO2 .",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_99": {
+      "current_text": "Claim that limiting greenhouse gas concentrations to 450 ppm CO2 equivalent will limit warming to 2°C",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:22.563108",
+          "action": "created",
+          "text": "Claim that limiting greenhouse gas concentrations to 450 ppm CO2 equivalent will limit warming to 2°C",
+          "source_article_id": "159",
+          "article_url": "unknown",
+          "source_snippet": "The 450 Scenario sets out an energy pathway consistent with the goal of limiting the global increase in temperature to 2 degreesC by limiting concentration of greenhouse gases in the atmosphere to around 450 parts per million of CO2 .",
+          "metadata": {
+            "article_id": 44
+          }
+        }
+      ]
+    },
+    "NC_101": {
+      "current_text": "Reuse of produced water from oil wells reduces freshwater withdrawal and environmental discharge",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:29.274652",
+          "action": "created",
+          "text": "Reuse of produced water from oil wells reduces freshwater withdrawal and environmental discharge",
+          "source_article_id": "161",
+          "article_url": "unknown",
+          "source_snippet": "The water is reused to meet technical requirements at installations, sidestepping the need both to tap the natural water supply and discharge the water produced into the environment.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:01:36.425235",
+          "action": "matched",
+          "text": "Reuse of produced water from oil wells reduces freshwater withdrawal and environmental discharge",
+          "source_article_id": "163",
+          "article_url": "unknown",
+          "source_snippet": "But it's the water produced along with the oil or gas that is increasingly used today.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:01:48.418700",
+          "action": "matched",
+          "text": "Reuse of produced water from oil wells reduces freshwater withdrawal and environmental discharge",
+          "source_article_id": "166",
+          "article_url": "unknown",
+          "source_snippet": "Total treats all produced water before reinjecting it into the reservoir.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:02:02.043728",
+          "action": "matched",
+          "text": "Reuse of produced water from oil wells reduces freshwater withdrawal and environmental discharge",
+          "source_article_id": "169",
+          "article_url": "unknown",
+          "source_snippet": "Both onshore and offshore, the first option people study now is avoiding any discharge into the natural environment and instead injecting produced water back into the reservoir it came from.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_102": {
+      "current_text": "Growth of water reinjection practices framed as environmental engagement by oil companies",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:29.274698",
+          "action": "created",
+          "text": "Growth of water reinjection practices framed as environmental engagement by oil companies",
+          "source_article_id": "161",
+          "article_url": "unknown",
+          "source_snippet": "Its future growth, especially in offshore fields, is part of the environmental engagement of oil companies, which are also experiencing mounting regulatory pressures.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:02:06.037176",
+          "action": "matched",
+          "text": "Growth of water reinjection practices framed as environmental engagement by oil companies",
+          "source_article_id": "170",
+          "article_url": "unknown",
+          "source_snippet": "\"So reinjection installations are always tailored to specific needs. 'We start with a standard architecture that we adapt to the specific physicochemical properties of the water to be reinjected.' The main risk is the formation of solid sulfate deposits that are very difficult to remove and can compromise the reinjection equipment. A range of parameters measuring quality, such as bacterial growth, are monitored. 'The higher the water quality desired, the more expensive the installation will be. We have to constantly make trade-offs to strike the right quality, cost and environmental balance,' says Pierre Pedenaud.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:02:15.764922",
+          "action": "matched",
+          "text": "Growth of water reinjection practices framed as environmental engagement by oil companies",
+          "source_article_id": "172",
+          "article_url": "unknown",
+          "source_snippet": "Produced water reinjection must adapt to each production site's always different environmental, technical and regulatory requirements.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_104": {
+      "current_text": "High water content in oil extraction increases over field lifetime",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:34.292465",
+          "action": "created",
+          "text": "High water content in oil extraction increases over field lifetime",
+          "source_article_id": "162",
+          "article_url": "unknown",
+          "source_snippet": "Minimal when a field first comes on stream, it can make up more than 90 percent of the fluids extracted after wells have been in service for 20 or so years.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:01:40.235121",
+          "action": "matched",
+          "text": "High water content in oil extraction increases over field lifetime",
+          "source_article_id": "164",
+          "article_url": "unknown",
+          "source_snippet": "According to a study by IFP Energies nouvelles (IFPEN), an estimated 250 million barrels of water a day were produced in 2008, a figure expected to jump to 300 million3 in 2020, an increase of 20 percent.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_103": {
+      "current_text": "Water is an essential natural element in oil production",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:34.292504",
+          "action": "created",
+          "text": "Water is an essential natural element in oil production",
+          "source_article_id": "162",
+          "article_url": "unknown",
+          "source_snippet": "No oil without water You can't produce oil without water, because water is present naturally in both onshore and offshore oil reservoirs.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:01:40.235089",
+          "action": "matched",
+          "text": "Water is an essential natural element in oil production",
+          "source_article_id": "164",
+          "article_url": "unknown",
+          "source_snippet": "Consequently, an average of three to five barrels of water1 is produced with one barrel of oil2. That means water is the number one fluid produced by the oil industry.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_106": {
+      "current_text": "Claim that oil industry must manage water use carefully to avoid stressing water supplies amid climate disruption",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:46.427881",
+          "action": "created",
+          "text": "Claim that oil industry must manage water use carefully to avoid stressing water supplies amid climate disruption",
+          "source_article_id": "165",
+          "article_url": "unknown",
+          "source_snippet": "oil development and production can't be allowed to stress the water supply",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_105": {
+      "current_text": "Assertion that water is an irreplaceable essential natural resource critical for energy production",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:46.427923",
+          "action": "created",
+          "text": "Assertion that water is an irreplaceable essential natural resource critical for energy production",
+          "source_article_id": "165",
+          "article_url": "unknown",
+          "source_snippet": "there's nothing that can replace water",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_108": {
+      "current_text": "Justification of produced water discharge practices as environmentally compliant due to dilution and standards",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:56.198369",
+          "action": "created",
+          "text": "Justification of produced water discharge practices as environmentally compliant due to dilution and standards",
+          "source_article_id": "167",
+          "article_url": "unknown",
+          "source_snippet": "In onshore production, the water was either discharged into the natural environment or handled by wastewater collection systems. On offshore platforms, it was mainly discharged into the ocean, taking advantage of a strong dilutive effect while complying with applicable international or local standards4 (generally, less than 30 milligrams of hydrocarbon per liter of water discharged).",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_109": {
+      "current_text": "Produced water discharge framed as environmentally safe due to strict hydrocarbon concentration limits",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:56.198411",
+          "action": "created",
+          "text": "Produced water discharge framed as environmentally safe due to strict hydrocarbon concentration limits",
+          "source_article_id": "167",
+          "article_url": "unknown",
+          "source_snippet": "Produced water discharge complies with applicable international or local standards4 (generally, less than 30 milligrams of hydrocarbon per liter of water discharged).",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_107": {
+      "current_text": "Produced water management framed as complex but evolving environmental practice",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:56.198431",
+          "action": "created",
+          "text": "Produced water management framed as complex but evolving environmental practice",
+          "source_article_id": "167",
+          "article_url": "unknown",
+          "source_snippet": "At the source is possible, but far from simple Produced water was long considered a byproduct that, depending on its quality, required specific treatment before discharge, but wasn't reused.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:02:02.043690",
+          "action": "matched",
+          "text": "Produced water management framed as complex but evolving environmental practice",
+          "source_article_id": "169",
+          "article_url": "unknown",
+          "source_snippet": "Oil companies' commitment to do more to manage the environmental impact of their activities, especially with respect to water management.",
+          "metadata": {
+            "article_id": 59
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:02:06.037150",
+          "action": "matched",
+          "text": "Produced water management framed as complex but evolving environmental practice",
+          "source_article_id": "170",
+          "article_url": "unknown",
+          "source_snippet": "\"So reinjection installations are always tailored to specific needs. 'We start with a standard architecture that we adapt to the specific physicochemical properties of the water to be reinjected.' The main risk is the formation of solid sulfate deposits that are very difficult to remove and can compromise the reinjection equipment. A range of parameters measuring quality, such as bacterial growth, are monitored. 'The higher the water quality desired, the more expensive the installation will be. We have to constantly make trade-offs to strike the right quality, cost and environmental balance,' says Pierre Pedenaud.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_110": {
+      "current_text": "Produced water is redefined as a valuable resource rather than waste",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:01:58.586670",
+          "action": "created",
+          "text": "Produced water is redefined as a valuable resource rather than waste",
+          "source_article_id": "168",
+          "article_url": "unknown",
+          "source_snippet": "For the last decade, produced water has been looked at as more of a resource.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_111": {
+      "current_text": "Water use minimization through circular water reinjection processes in oil and gas operations",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:11.975088",
+          "action": "created",
+          "text": "Water use minimization through circular water reinjection processes in oil and gas operations",
+          "source_article_id": "171",
+          "article_url": "unknown",
+          "source_snippet": "\"We aim to minimize the water we draw from the environment, by deploying a type of circular process to avoid competing with those other uses.\"",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_112": {
+      "current_text": "Framing water as an essential resource for multiple critical human uses to justify careful management in fossil fuel production",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:11.975136",
+          "action": "created",
+          "text": "Framing water as an essential resource for multiple critical human uses to justify careful management in fossil fuel production",
+          "source_article_id": "171",
+          "article_url": "unknown",
+          "source_snippet": "\"Water has a wide range of uses, including agriculture, food and hygiene,\" stresses Total's expert.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_113": {
+      "current_text": "Produced water reinjection framed as mandatory to protect freshwater sources for communities",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:15.764970",
+          "action": "created",
+          "text": "Produced water reinjection framed as mandatory to protect freshwater sources for communities",
+          "source_article_id": "172",
+          "article_url": "unknown",
+          "source_snippet": "\"For example, in Uganda, at a future onshore site that will produce saline water, reinjection is mandatory because discharging it into freshwater meant for communities is out of the question.\"",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_114": {
+      "current_text": "Circular economy as a characteristic of future oil production",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:18.726692",
+          "action": "created",
+          "text": "Circular economy as a characteristic of future oil production",
+          "source_article_id": "173",
+          "article_url": "unknown",
+          "source_snippet": "So circularity is likely to be a characteristic of future oil production.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_117": {
+      "current_text": "Assertion that environmental discharge standards vary internationally, implying complexity or difficulty in regulatory harmonization",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:26.006525",
+          "action": "created",
+          "text": "Assertion that environmental discharge standards vary internationally, implying complexity or difficulty in regulatory harmonization",
+          "source_article_id": "174",
+          "article_url": "unknown",
+          "source_snippet": "There is no international standard. Every country or group of countries has its own standards.",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_116": {
+      "current_text": "Environmental regulation setting specific limits for oil discharge from offshore platforms as a compliance benchmark",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:26.006571",
+          "action": "created",
+          "text": "Environmental regulation setting specific limits for oil discharge from offshore platforms as a compliance benchmark",
+          "source_article_id": "174",
+          "article_url": "unknown",
+          "source_snippet": "Resolution 393 of the Conselho Nacional do Meio Ambiente (2007) limits the discharge of oil from offshore platforms to a daily maximum concentration of 42 mg/l",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_115": {
+      "current_text": "Goal of Zero Harm Discharge (ZHD) from offshore oil operations as environmental commitment",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:26.006596",
+          "action": "created",
+          "text": "Goal of Zero Harm Discharge (ZHD) from offshore oil operations as environmental commitment",
+          "source_article_id": "174",
+          "article_url": "unknown",
+          "source_snippet": "the goal is to achieve Zero Harm Discharge (ZHD) by 2020",
+          "metadata": {
+            "article_id": 59
+          }
+        }
+      ]
+    },
+    "NC_118": {
+      "current_text": "Use of artificial intelligence to enhance oil and gas exploration and evaluation",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:54.063653",
+          "action": "created",
+          "text": "Use of artificial intelligence to enhance oil and gas exploration and evaluation",
+          "source_article_id": "181",
+          "article_url": "unknown",
+          "source_snippet": "It is already a concrete goal at Total, whose Chief Digital Officer Gilles Cochevelou hopes to \"succeed in our big artificial intelligence project in partnership with Google to unlock the value of geosciences data.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_119": {
+      "current_text": "Development of AI-powered computer vision and natural language processing tools for oil and gas data interpretation",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:54.063734",
+          "action": "created",
+          "text": "Development of AI-powered computer vision and natural language processing tools for oil and gas data interpretation",
+          "source_article_id": "181",
+          "article_url": "unknown",
+          "source_snippet": "Their agreement calls for developing AI programs that can interpret subsurface images (computer vision), especially seismic ones, and automate technical document analysis (natural language processing).",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_120": {
+      "current_text": "Claim that AI technology will improve the quality and outcomes of fossil fuel exploration and evaluation",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:02:54.063762",
+          "action": "created",
+          "text": "Claim that AI technology will improve the quality and outcomes of fossil fuel exploration and evaluation",
+          "source_article_id": "181",
+          "article_url": "unknown",
+          "source_snippet": "Doing so would produce higher-quality oil and gas field exploration and evaluation results for Total engineers.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_122": {
+      "current_text": "Claim that AI-powered data analytics boosts fossil fuel industry productivity and predicts equipment failures",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:07.991472",
+          "action": "created",
+          "text": "Claim that AI-powered data analytics boosts fossil fuel industry productivity and predicts equipment failures",
+          "source_article_id": "182",
+          "article_url": "unknown",
+          "source_snippet": "FieldBox.ai offers a data analytics platform that helps industry boost productivity and predict failures.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_123": {
+      "current_text": "Claim that AI tools provide real-time visualization and optimization of gas and power flows",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:07.991509",
+          "action": "created",
+          "text": "Claim that AI tools provide real-time visualization and optimization of gas and power flows",
+          "source_article_id": "182",
+          "article_url": "unknown",
+          "source_snippet": "DCbrain is the Waze of energy networks, displaying gas and power flows in real time and optimizing them.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_121": {
+      "current_text": "Use of partnerships with AI start-ups to transform fossil fuel company digital operations",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:07.991530",
+          "action": "created",
+          "text": "Use of partnerships with AI start-ups to transform fossil fuel company digital operations",
+          "source_article_id": "182",
+          "article_url": "unknown",
+          "source_snippet": "\"Working with them via open innovation is one way to drive our digital transformation,\" stresses Michael Offredi, Total's Digital Ecosystem & Innovation Officer.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_125": {
+      "current_text": "Use of autonomous drones for real-time remote inspection of fossil fuel production facilities",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:07.991557",
+          "action": "created",
+          "text": "Use of autonomous drones for real-time remote inspection of fossil fuel production facilities",
+          "source_article_id": "182",
+          "article_url": "unknown",
+          "source_snippet": "Uavia provides connected, autonomous drones for real-time, remote aerial inspection of production facilities.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_124": {
+      "current_text": "Claim that smart energy metering platforms for homes represent fossil fuel company digital innovation efforts",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:07.991581",
+          "action": "created",
+          "text": "Claim that smart energy metering platforms for homes represent fossil fuel company digital innovation efforts",
+          "source_article_id": "182",
+          "article_url": "unknown",
+          "source_snippet": "eSoftThings, specialized in miniaturized wireless communication systems, has developed a smart energy metering platform for homes.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_126": {
+      "current_text": "Investment in digital technology and partnerships with startups to enable fossil fuel company digital transition",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:19.767542",
+          "action": "created",
+          "text": "Investment in digital technology and partnerships with startups to enable fossil fuel company digital transition",
+          "source_article_id": "183",
+          "article_url": "unknown",
+          "source_snippet": "\"Proof, if any is needed, that Total has taken digital on board and invested in the digital transition of its operations. Both financially - 'R&D and operational projects combined come to around $400 million a year' says the CDO - and by finding more and more opportunities to work with innovative start-ups.\"",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_127": {
+      "current_text": "Claim of comprehensive digital transition within fossil fuel company operations",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:19.767583",
+          "action": "created",
+          "text": "Claim of comprehensive digital transition within fossil fuel company operations",
+          "source_article_id": "183",
+          "article_url": "unknown",
+          "source_snippet": "\"Proof, if any is needed, that Total has taken digital on board and invested in the digital transition of its operations.\"",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_128": {
+      "current_text": "Financial commitment to digital R&D and operational projects including startup collaborations",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:19.767611",
+          "action": "created",
+          "text": "Financial commitment to digital R&D and operational projects including startup collaborations",
+          "source_article_id": "183",
+          "article_url": "unknown",
+          "source_snippet": "\"Both financially - 'R&D and operational projects combined come to around $400 million a year' says the CDO - and by finding more and more opportunities to work with innovative start-ups.\"",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_130": {
+      "current_text": "Assertion that digital technology is a major driver of fossil fuel company overall corporate performance",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:25.792348",
+          "action": "created",
+          "text": "Assertion that digital technology is a major driver of fossil fuel company overall corporate performance",
+          "source_article_id": "184",
+          "article_url": "unknown",
+          "source_snippet": "\"His CEO seconds the notion, convinced that \"digital is a major driver of Total's performance!\"",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_129": {
+      "current_text": "Digital transformation boosts operational performance, cuts costs, enhances industrial safety, and creates new fossil fuel-related business opportunities",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:25.792379",
+          "action": "created",
+          "text": "Digital transformation boosts operational performance, cuts costs, enhances industrial safety, and creates new fossil fuel-related business opportunities",
+          "source_article_id": "184",
+          "article_url": "unknown",
+          "source_snippet": "\"The digital transition is a fundamental shift that affects all organizations and, at Total, all our business segments, from upstream oil through marketing and our internal work processes. Today lots of businesses and professions have embraced digital transformation, boosting operational performance, cutting costs, enhancing industrial safety and creating new businesses,\" says Gilles Cochevelou.",
+          "metadata": {
+            "article_id": 84
+          }
+        }
+      ]
+    },
+    "NC_131": {
+      "current_text": "Focus on innovations aimed at reducing environmental footprint of fossil fuel activities",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:28.488368",
+          "action": "created",
+          "text": "Focus on innovations aimed at reducing environmental footprint of fossil fuel activities",
+          "source_article_id": "185",
+          "article_url": "unknown",
+          "source_snippet": "It now focuses less on technical performance under extreme conditions and more on innovations that cut the costs and shrink the environmental footprint of Total's activities.",
+          "metadata": {
+            "article_id": 85
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:03:42.161135",
+          "action": "matched",
+          "text": "Focus on innovations aimed at reducing environmental footprint of fossil fuel activities",
+          "source_article_id": "187",
+          "article_url": "unknown",
+          "source_snippet": "The physical chemistry of interfaces, which helps research scientists better understand the interactions among matter's solid, liquid and gas states. The goal is to optimize oil and gas transportation installations and enhanced oil recovery operations, especially by using carbon dioxide.",
+          "metadata": {
+            "article_id": 85
+          }
+        },
+        {
+          "timestamp": "2026-04-15T10:04:04.209779",
+          "action": "matched",
+          "text": "Focus on innovations aimed at reducing environmental footprint of fossil fuel activities",
+          "source_article_id": "192",
+          "article_url": "unknown",
+          "source_snippet": "\"Energy and operational efficiency, reducing our operations' impact and carbon capture, utilization and storage (CCUS) are the new research fields being explored by PERL.\"",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    },
+    "NC_132": {
+      "current_text": "Research on algae as an efficient carbon trap and hydrocarbon plant feedstock",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:03:42.161166",
+          "action": "created",
+          "text": "Research on algae as an efficient carbon trap and hydrocarbon plant feedstock",
+          "source_article_id": "187",
+          "article_url": "unknown",
+          "source_snippet": "The environment, which includes water and soil treatment/cleanup and ecotoxicology in general. Plus, research to enhance processes to exploit algae, an efficient carbon trap and hydrocarbon plant feedstock.",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    },
+    "NC_134": {
+      "current_text": "R&D acknowledges that some oil and gas will remain unextracted due to cost and technological constraints",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:04:04.209826",
+          "action": "created",
+          "text": "R&D acknowledges that some oil and gas will remain unextracted due to cost and technological constraints",
+          "source_article_id": "192",
+          "article_url": "unknown",
+          "source_snippet": "\"Before, R&D's role was to push the technological envelope: deepwater, very high pressure reservoirs, extreme temperatures and more. Those technologies are too expensive to use and we know that some oil and gas will remain in the ground.\"",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    },
+    "NC_133": {
+      "current_text": "R&D efforts focus on reducing costs to make climate-related technologies sustainable",
+      "history": [
+        {
+          "timestamp": "2026-04-15T10:04:04.209847",
+          "action": "created",
+          "text": "R&D efforts focus on reducing costs to make climate-related technologies sustainable",
+          "source_article_id": "192",
+          "article_url": "unknown",
+          "source_snippet": "\"There is also an obligation to lower costs to make those technologies sustainable.\"",
+          "metadata": {
+            "article_id": 85
+          }
+        }
+      ]
+    }
+  },
+  "last_updated": "2026-04-15T10:04:04.209851"
+}
