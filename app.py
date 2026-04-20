@@ -311,7 +311,9 @@ app = FastAPI(title="Claim Mapper API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    # Browsers reject `Access-Control-Allow-Origin: *` together with credentialed fetches.
+    # This API does not rely on cookies; keep credentials off so wildcard origins work.
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
