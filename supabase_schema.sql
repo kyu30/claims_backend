@@ -9,7 +9,11 @@ create table if not exists public.taxonomy_proposals (
   bundle_version text not null default '',
   paragraph text not null default '',
   payload jsonb not null default '{}'::jsonb,
-  rationale text not null default ''
+  rationale text not null default '',
+  reviewed_by text,
+  reviewed_at timestamptz,
+  applied_by text,
+  applied_at timestamptz
 );
 
 alter table public.taxonomy_proposals enable row level security;
@@ -19,6 +23,12 @@ revoke all on public.taxonomy_proposals from anon, authenticated;
 
 create index if not exists taxonomy_proposals_status_created_idx
   on public.taxonomy_proposals (status, created_at desc);
+
+-- If you created the table before reviewer/apply attribution columns existed, run:
+alter table public.taxonomy_proposals add column if not exists reviewed_by text;
+alter table public.taxonomy_proposals add column if not exists reviewed_at timestamptz;
+alter table public.taxonomy_proposals add column if not exists applied_by text;
+alter table public.taxonomy_proposals add column if not exists applied_at timestamptz;
 
 create table if not exists public.taxonomy_merge_log (
   id bigserial primary key,
