@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from .llm_confidence import score_subclaim_to_superclaim_confidence
+from llm_confidence import score_subclaim_to_superclaim_confidence
 
 
 ROOT = Path(__file__).resolve().parents[1]
