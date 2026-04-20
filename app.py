@@ -21,14 +21,59 @@ ROOT = Path(__file__).resolve().parent
 _DEFAULT_ENV_PATH = ROOT / ".env"
 load_dotenv(dotenv_path=str(_DEFAULT_ENV_PATH), override=False)
 
-CODEBOOK_PATH = ROOT / "greenwashing_codebook.json"
-SUPERCLAIMS_PATH = ROOT / "greenwashing_superclaims.json"
-MAP_PATH = ROOT / "claim_superclaim_map.json"
-HISTORY_PATH = ROOT / "greenwashing_claim_history.json"
+CODEBOOK_NAME = "greenwashing_codebook.json"
+SUPERCLAIMS_NAME = "greenwashing_superclaims.json"
+MAP_NAME = "claim_superclaim_map.json"
+HISTORY_NAME = "greenwashing_claim_history.json"
 
-APP_DATA_DIR = ROOT / "data"
+CODEBOOK_PATH = ROOT / CODEBOOK_NAME
+SUPERCLAIMS_PATH = ROOT / SUPERCLAIMS_NAME
+MAP_PATH = ROOT / MAP_NAME
+HISTORY_PATH = ROOT / HISTORY_NAME
+
+# Local-only proposal queue (dev / non-Supabase). On Vercel, use Supabase DB instead.
+APP_DATA_DIR = Path(os.getenv("CLAIMS_LOCAL_DATA_DIR", str(ROOT / "data")))
 PROPOSALS_PATH = APP_DATA_DIR / "proposals.json"
 MERGES_PATH = APP_DATA_DIR / "merges.json"
+
+SUPABASE_URL = (os.getenv("SUPABASE_URL") or "").strip()
+SUPABASE_KEY = (
+    (os.getenv("SUPABASE_SERVICE_ROLE_KEY") or "").strip()
+    or (os.getenv("SUPABASE_KEY") or "").strip()
+)
+SUPABASE_CLAIMS_BUCKET = (os.getenv("SUPABASE_CLAIMS_BUCKET") or "").strip()
+SUPABASE_CLAIMS_PREFIX = (os.getenv("SUPABASE_CLAIMS_PREFIX") or "").strip().strip("/")
+
+_supabase_client = None
+
+
+def _supabase_enabled() -> bool:
+    return bool(SUPABASE_URL and SUPABASE_KEY)
+
+
+def _claims_storage_enabled() -> bool:
+    return _supabase_enabled() and bool(SUPABASE_CLAIMS_BUCKET)
+
+
+def _get_supabase():
+    global _supabase_client
+    if not _supabase_enabled():
+        raise HTTPException(
+            status_code=500,
+            detail="Supabase is not configured (set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY).",
+        )
+    if _supabase_client is None:
+        from supabase import create_client
+
+        _supabase_client = create_client(SUPABASE_URL, SUPABASE_KEY)
+    return _supabase_client
+
+
+def _storage_object_path(filename: str) -> str:
+    fn = str(filename).lstrip("/")
+    if SUPABASE_CLAIMS_PREFIX:
+        return f"{SUPABASE_CLAIMS_PREFIX}/{fn}"
+    return fn
 
 
 def _read_json(path: Path) -> Any:
@@ -40,6 +85,36 @@ def _read_json(path: Path) -> Any:
         raise HTTPException(status_code=500, detail=f"Invalid JSON in {path.name}: {e}") from e
 
 
+def _read_claim_json_bytes(filename: str) -> bytes:
+    if _claims_storage_enabled():
+        sb = _get_supabase()
+        path = _storage_object_path(filename)
+        try:
+            data = sb.storage.from_(SUPABASE_CLAIMS_BUCKET).download(path)
+        except Exception as e:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Supabase Storage download failed for {path}: {e}",
+            ) from e
+        if data is None:
+            raise HTTPException(status_code=500, detail=f"Missing object in storage: {path}")
+        return data if isinstance(data, (bytes, bytearray)) else bytes(data)
+
+    path = ROOT / filename
+    try:
+        return path.read_bytes()
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=500, detail=f"Missing required file: {filename}") from e
+
+
+def _read_claim_json(filename: str) -> Any:
+    raw = _read_claim_json_bytes(filename)
+    try:
+        return json.loads(raw.decode("utf-8"))
+    except json.JSONDecodeError as e:
+        raise HTTPException(status_code=500, detail=f"Invalid JSON in {filename}: {e}") from e
+
+
 def _write_json_atomic(path: Path, obj: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -47,12 +122,34 @@ def _write_json_atomic(path: Path, obj: Any) -> None:
     tmp.replace(path)
 
 
+def _upload_claim_json(filename: str, obj: Any) -> None:
+    if not _claims_storage_enabled():
+        path = ROOT / filename
+        _write_json_atomic(path, obj)
+        return
+
+    sb = _get_supabase()
+    path = _storage_object_path(filename)
+    body = (json.dumps(obj, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+    try:
+        sb.storage.from_(SUPABASE_CLAIMS_BUCKET).upload(
+            path,
+            body,
+            {"content-type": "application/json", "upsert": "true"},
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Supabase Storage upload failed for {path}: {e}",
+        ) from e
+
+
 def _bundle_fingerprint() -> str:
     h = hashlib.sha256()
-    for p in (CODEBOOK_PATH, SUPERCLAIMS_PATH, MAP_PATH, HISTORY_PATH):
-        h.update(p.name.encode("utf-8"))
+    for name in (CODEBOOK_NAME, SUPERCLAIMS_NAME, MAP_NAME, HISTORY_NAME):
+        h.update(name.encode("utf-8"))
         h.update(b"\0")
-        h.update(p.read_bytes())
+        h.update(_read_claim_json_bytes(name))
         h.update(b"\0\0")
     return h.hexdigest()[:12]
 
@@ -106,9 +203,9 @@ def _next_id(existing_ids: List[str], prefix: str) -> str:
 
 
 def _load_taxonomy() -> Tuple[Dict[str, str], Dict[str, str], Dict[str, str]]:
-    codebook = _read_json(CODEBOOK_PATH)
-    superclaims = _read_json(SUPERCLAIMS_PATH)
-    claim_map = _read_json(MAP_PATH)
+    codebook = _read_claim_json(CODEBOOK_NAME)
+    superclaims = _read_claim_json(SUPERCLAIMS_NAME)
+    claim_map = _read_claim_json(MAP_NAME)
 
     if not isinstance(codebook, dict):
         raise HTTPException(status_code=500, detail="greenwashing_codebook.json must be an object {NC_*: text}")
@@ -187,7 +284,47 @@ class ProposalActionResponse(BaseModel):
     proposal: Proposal
 
 
+def _proposal_row_to_dict(row: Dict[str, Any]) -> Dict[str, Any]:
+    created = row.get("created_at") or row.get("createdAt")
+    created_f: float
+    if isinstance(created, (int, float)):
+        created_f = float(created)
+    elif isinstance(created, str):
+        try:
+            from datetime import datetime
+
+            created_f = datetime.fromisoformat(created.replace("Z", "+00:00")).timestamp()
+        except Exception:
+            created_f = time.time()
+    else:
+        created_f = time.time()
+
+    return {
+        "id": row.get("id"),
+        "type": row.get("type"),
+        "status": row.get("status"),
+        "createdAt": created_f,
+        "bundleVersion": row.get("bundle_version") or row.get("bundleVersion") or "",
+        "paragraph": row.get("paragraph") or "",
+        "payload": row.get("payload") or {},
+        "rationale": row.get("rationale") or "",
+    }
+
+
 def _load_proposals() -> Dict[str, Any]:
+    if _supabase_enabled():
+        sb = _get_supabase()
+        try:
+            resp = sb.table("taxonomy_proposals").select("*").order("created_at", desc=True).execute()
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Supabase read proposals failed: {e}") from e
+        rows = getattr(resp, "data", None) or []
+        normalized = []
+        for r in rows:
+            if isinstance(r, dict):
+                normalized.append(_proposal_row_to_dict(r))
+        return {"proposals": normalized}
+
     if not PROPOSALS_PATH.exists():
         return {"proposals": []}
     data = _read_json(PROPOSALS_PATH)
@@ -197,10 +334,34 @@ def _load_proposals() -> Dict[str, Any]:
 
 
 def _save_proposals(doc: Dict[str, Any]) -> None:
+    if _supabase_enabled():
+        raise RuntimeError("_save_proposals should not be used in Supabase mode")
+
     _write_json_atomic(PROPOSALS_PATH, doc)
 
 
+def _upsert_proposal_db(p: Proposal) -> None:
+    sb = _get_supabase()
+    row = {
+        "id": p.id,
+        "type": p.type,
+        "status": p.status,
+        "bundle_version": p.bundleVersion,
+        "paragraph": p.paragraph,
+        "payload": p.payload,
+        "rationale": p.rationale,
+    }
+    try:
+        sb.table("taxonomy_proposals").upsert(row, on_conflict="id").execute()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Supabase upsert proposal failed: {e}") from e
+
+
 def _upsert_proposal(p: Proposal) -> Proposal:
+    if _supabase_enabled():
+        _upsert_proposal_db(p)
+        return p
+
     doc = _load_proposals()
     lst: List[Dict[str, Any]] = doc.get("proposals", [])
     found = False
@@ -321,7 +482,14 @@ app.add_middleware(
 
 @app.get("/api/health")
 def health() -> Dict[str, Any]:
-    return {"ok": True, "bundleVersion": _bundle_fingerprint()}
+    return {
+        "ok": True,
+        "bundleVersion": _bundle_fingerprint(),
+        "supabase": _supabase_enabled(),
+        "claimsStorage": _claims_storage_enabled(),
+        "claimsBucket": SUPABASE_CLAIMS_BUCKET or None,
+        "claimsPrefix": SUPABASE_CLAIMS_PREFIX or None,
+    }
 
 
 @app.post("/api/analyze", response_model=AnalyzeResponse)
@@ -373,7 +541,49 @@ def list_proposals(status: Optional[str] = None) -> List[Proposal]:
     return out
 
 
+def _append_merge_event(p: Proposal) -> None:
+    if _supabase_enabled():
+        sb = _get_supabase()
+        try:
+            sb.table("taxonomy_merge_log").insert(
+                {
+                    "proposal_id": p.id,
+                    "merge_type": p.type,
+                    "bundle_version": p.bundleVersion,
+                    "payload": p.payload,
+                }
+            ).execute()
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Supabase merge log insert failed: {e}") from e
+        return
+
+    doc = _read_json(MERGES_PATH) if MERGES_PATH.exists() else {"merges": []}
+    if not isinstance(doc, dict) or not isinstance(doc.get("merges"), list):
+        doc = {"merges": []}
+    doc["merges"].append(
+        {
+            "id": p.id,
+            "type": p.type,
+            "createdAt": p.createdAt,
+            "bundleVersion": p.bundleVersion,
+            "payload": p.payload,
+        }
+    )
+    _write_json_atomic(MERGES_PATH, doc)
+
+
 def _get_proposal_or_404(pid: str) -> Proposal:
+    if _supabase_enabled():
+        sb = _get_supabase()
+        try:
+            resp = sb.table("taxonomy_proposals").select("*").eq("id", pid).limit(1).execute()
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Supabase read proposal failed: {e}") from e
+        rows = getattr(resp, "data", None) or []
+        if not rows or not isinstance(rows[0], dict):
+            raise HTTPException(status_code=404, detail="Proposal not found")
+        return _proposal_from_row(_proposal_row_to_dict(rows[0]))
+
     doc = _load_proposals()
     for row in doc.get("proposals", []):
         if isinstance(row, dict) and row.get("id") == pid:
@@ -411,7 +621,7 @@ def apply_proposal(proposal_id: str) -> ProposalActionResponse:
             raise HTTPException(status_code=400, detail="Missing superclaimText")
         new_id = _next_id(list(superclaims.keys()), "SC_")
         superclaims[new_id] = text
-        _write_json_atomic(SUPERCLAIMS_PATH, dict(sorted(superclaims.items())))
+        _upload_claim_json(SUPERCLAIMS_NAME, dict(sorted(superclaims.items())))
 
     elif p.type == "new_subclaim":
         text = str(p.payload.get("subclaimText") or "").strip()
@@ -424,29 +634,17 @@ def apply_proposal(proposal_id: str) -> ProposalActionResponse:
             # If the suggested superclaim is missing, create it as well.
             suggested_sc = _next_id(list(superclaims.keys()), "SC_")
             superclaims[suggested_sc] = str(p.payload.get("suggestedSuperclaimText") or "New superclaim").strip()
-            _write_json_atomic(SUPERCLAIMS_PATH, dict(sorted(superclaims.items())))
+            _upload_claim_json(SUPERCLAIMS_NAME, dict(sorted(superclaims.items())))
 
         new_nc = _next_id(list(codebook.keys()), "NC_")
         codebook[new_nc] = text
         claim_map[new_nc] = suggested_sc
-        _write_json_atomic(CODEBOOK_PATH, dict(sorted(codebook.items())))
-        _write_json_atomic(MAP_PATH, dict(sorted(claim_map.items())))
+        _upload_claim_json(CODEBOOK_NAME, dict(sorted(codebook.items())))
+        _upload_claim_json(MAP_NAME, dict(sorted(claim_map.items())))
 
     elif p.type in ("merge_subclaims", "merge_superclaims"):
         # Minimal bookkeeping: store merge request; do not rewrite your canonical JSON automatically.
-        doc = _read_json(MERGES_PATH) if MERGES_PATH.exists() else {"merges": []}
-        if not isinstance(doc, dict) or not isinstance(doc.get("merges"), list):
-            doc = {"merges": []}
-        doc["merges"].append(
-            {
-                "id": p.id,
-                "type": p.type,
-                "createdAt": p.createdAt,
-                "bundleVersion": p.bundleVersion,
-                "payload": p.payload,
-            }
-        )
-        _write_json_atomic(MERGES_PATH, doc)
+        _append_merge_event(p)
 
     elif p.type == "link_subclaim_to_superclaim":
         sub_id = _normalize_subclaim_id(str(p.payload.get("subclaimId") or "").strip())
@@ -458,7 +656,7 @@ def apply_proposal(proposal_id: str) -> ProposalActionResponse:
         if sc_id not in superclaims:
             raise HTTPException(status_code=400, detail=f"Unknown superclaim: {sc_id}")
         claim_map[sub_id] = sc_id
-        _write_json_atomic(MAP_PATH, dict(sorted(claim_map.items())))
+        _upload_claim_json(MAP_NAME, dict(sorted(claim_map.items())))
 
     else:
         raise HTTPException(status_code=400, detail=f"Unsupported proposal type: {p.type}")
