@@ -41,3 +41,59 @@ create table if not exists public.taxonomy_merge_log (
 
 alter table public.taxonomy_merge_log enable row level security;
 revoke all on public.taxonomy_merge_log from anon, authenticated;
+
+-- ============================================================================
+-- Public taxonomy tables (browser read/write, NO auth)
+--
+-- WARNING: The policies below intentionally allow anonymous users to mutate
+-- taxonomy. Only enable this for trusted/private deployments.
+-- ============================================================================
+
+create table if not exists public.taxonomy_superclaims (
+  id text primary key,
+  text text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.taxonomy_subclaims (
+  id text primary key,
+  text text not null,
+  superclaim_id text not null references public.taxonomy_superclaims(id) on update cascade on delete restrict,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists taxonomy_subclaims_superclaim_idx
+  on public.taxonomy_subclaims (superclaim_id);
+
+alter table public.taxonomy_superclaims enable row level security;
+alter table public.taxonomy_subclaims enable row level security;
+
+-- Public read/write policies (anon + authenticated).
+drop policy if exists "public superclaims read" on public.taxonomy_superclaims;
+create policy "public superclaims read"
+  on public.taxonomy_superclaims for select
+  using (true);
+
+drop policy if exists "public superclaims write" on public.taxonomy_superclaims;
+create policy "public superclaims write"
+  on public.taxonomy_superclaims for all
+  using (true)
+  with check (true);
+
+drop policy if exists "public subclaims read" on public.taxonomy_subclaims;
+create policy "public subclaims read"
+  on public.taxonomy_subclaims for select
+  using (true);
+
+drop policy if exists "public subclaims write" on public.taxonomy_subclaims;
+create policy "public subclaims write"
+  on public.taxonomy_subclaims for all
+  using (true)
+  with check (true);
+
+-- Allow PostgREST access for anon/authenticated roles.
+grant usage on schema public to anon, authenticated;
+grant select, insert, update, delete on public.taxonomy_superclaims to anon, authenticated;
+grant select, insert, update, delete on public.taxonomy_subclaims to anon, authenticated;
