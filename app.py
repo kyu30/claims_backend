@@ -44,6 +44,11 @@ SUPABASE_KEY = (
 )
 SUPABASE_CLAIMS_BUCKET = (os.getenv("SUPABASE_CLAIMS_BUCKET") or "").strip()
 SUPABASE_CLAIMS_PREFIX = (os.getenv("SUPABASE_CLAIMS_PREFIX") or "").strip().strip("/")
+SUPABASE_TAXONOMY_TABLES = (os.getenv("SUPABASE_TAXONOMY_TABLES") or "").strip().lower() in (
+    "1",
+    "true",
+    "yes",
+)
 
 _supabase_client = None
 
@@ -204,6 +209,44 @@ def _next_id(existing_ids: List[str], prefix: str) -> str:
 
 
 def _load_taxonomy() -> Tuple[Dict[str, str], Dict[str, str], Dict[str, str]]:
+    if SUPABASE_TAXONOMY_TABLES and _supabase_enabled():
+        sb = _get_supabase()
+        try:
+            sc_rows = sb.table("taxonomy_superclaims").select("id,text").execute().data or []
+            nc_rows = (
+                sb.table("taxonomy_subclaims")
+                .select("id,text,superclaim_id")
+                .execute()
+                .data
+                or []
+            )
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Supabase taxonomy table read failed: {e}") from e
+
+        super_norm = {}
+        for r in sc_rows:
+            if not isinstance(r, dict):
+                continue
+            sid = _normalize_superclaim_id(str(r.get("id") or "").strip())
+            txt = str(r.get("text") or "").strip()
+            if sid and txt:
+                super_norm[sid] = txt
+
+        codebook_norm = {}
+        map_norm = {}
+        for r in nc_rows:
+            if not isinstance(r, dict):
+                continue
+            nid = _normalize_subclaim_id(str(r.get("id") or "").strip())
+            txt = str(r.get("text") or "").strip()
+            sc = _normalize_superclaim_id(str(r.get("superclaim_id") or "").strip())
+            if nid and txt:
+                codebook_norm[nid] = txt
+            if nid and sc:
+                map_norm[nid] = sc
+
+        return codebook_norm, super_norm, map_norm
+
     codebook = _read_claim_json(CODEBOOK_NAME)
     superclaims = _read_claim_json(SUPERCLAIMS_NAME)
     claim_map = _read_claim_json(MAP_NAME)
@@ -350,6 +393,7 @@ class ProposalActionResponse(BaseModel):
 
 class ReviewerActionRequest(BaseModel):
     reviewer_name: str = Field(..., min_length=1, max_length=120)
+    skip_taxonomy_update: bool = False
 
 
 def _parse_ts_to_epoch(value: Any) -> float:
@@ -875,6 +919,18 @@ def apply_proposal(proposal_id: str, req: ReviewerActionRequest) -> ProposalActi
         raise HTTPException(status_code=400, detail="Proposal must be approved before applying.")
 
     codebook, superclaims, claim_map = _load_taxonomy()
+
+    # In "browser-writes-taxonomy" mode, the frontend will update Supabase tables directly.
+    # The backend should only mark/log the proposal as applied.
+    if req.skip_taxonomy_update:
+        now = time.time()
+        p.payload = {**p.payload, "appliedAt": now}
+        p.appliedBy = req.reviewer_name.strip()
+        p.appliedAt = now
+        if p.type in ("merge_subclaims", "merge_superclaims"):
+            _append_merge_event(p)
+        p = _upsert_proposal(p)
+        return ProposalActionResponse(ok=True, proposal=p)
 
     if p.type == "new_superclaim":
         text = str(p.payload.get("superclaimText") or "").strip()
