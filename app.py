@@ -222,6 +222,30 @@ def _load_taxonomy() -> Tuple[Dict[str, str], Dict[str, str], Dict[str, str]]:
     return codebook_norm, super_norm, map_norm
 
 
+def _normalized_superclaim_text_key(text: str) -> str:
+    """Normalize superclaim wording for duplicate checks against greenwashing_superclaims.json."""
+    return " ".join(str(text or "").split()).casefold()
+
+
+def _paragraph_as_new_superclaim_text(paragraph: str, *, max_len: int = 400) -> str:
+    """Single-line draft label for a proposed superclaim (not an existing SC_* row)."""
+    s = " ".join(str(paragraph or "").split()).strip()
+    if not s:
+        return ""
+    if len(s) <= max_len:
+        return s
+    return s[:max_len].rstrip()
+
+
+def _existing_superclaim_text_keys(superclaims: Dict[str, str]) -> set[str]:
+    keys: set[str] = set()
+    for v in superclaims.values():
+        k = _normalized_superclaim_text_key(str(v))
+        if k:
+            keys.add(k)
+    return keys
+
+
 def _tfidf_topk(query: str, items: List[Tuple[str, str]], k: int = 8) -> List[Tuple[str, str, float]]:
     if not items:
         return []
@@ -470,6 +494,7 @@ def _llm_suggest_mapping(
     sub_candidates: List[Tuple[str, str, float]],
     super_candidates: List[Tuple[str, str, float]],
     claim_map: Dict[str, str],
+    superclaims: Dict[str, str],
     merge_pair_min_cosine: float,
     merge_max_pairs: int,
     propose_new_if_below: float,
@@ -477,19 +502,23 @@ def _llm_suggest_mapping(
     """
     Minimal “B” behavior:
     - Pick best existing (subclaim, superclaim) by TF‑IDF and then verify with LLM confidence scorer.
-    - If LLM confidence is low, propose a new subclaim under the best superclaim (or propose new superclaim if none fit).
+    - If LLM confidence is low, propose a **new_superclaim** draft from the paragraph when that text is
+      not already present in greenwashing_superclaims.json (normalized match).
     - Propose merges using TF‑IDF cosine similarity between top candidate texts (subclaims and superclaims).
     """
     proposals: List[Tuple[ProposalType, Dict[str, Any], str]] = []
+    existing_sc_keys = _existing_superclaim_text_keys(superclaims)
 
     if not sub_candidates or not super_candidates:
-        proposals.append(
-            (
-                "new_superclaim",
-                {"superclaimText": paragraph[:140]},
-                "No existing taxonomy candidates available.",
+        draft = _paragraph_as_new_superclaim_text(paragraph, max_len=280)
+        if draft and _normalized_superclaim_text_key(draft) not in existing_sc_keys:
+            proposals.append(
+                (
+                    "new_superclaim",
+                    {"superclaimText": draft},
+                    "No existing taxonomy candidates available.",
+                )
             )
-        )
         return ([], proposals)
 
     # Merge proposals (TF‑IDF cosine similarity between subclaim texts, same family of scoring as candidate retrieval).
@@ -623,22 +652,26 @@ def _llm_suggest_mapping(
             proposals,
         )
 
-    # Propose a new subclaim (text distilled from paragraph) under best superclaim.
-    proposals.append(
-        (
-            "new_subclaim",
-            {
-                "subclaimText": paragraph,
-                "suggestedSuperclaimId": best_super_id,
-                "suggestedSuperclaimText": best_super_text,
-                "basedOnCandidateSubclaimId": best_sub_id,
-                "basedOnCandidateSubclaimText": best_sub_text,
-                "confidence": conf,
-                "verdict": verdict,
-            },
-            reason or "Low confidence mapping; propose creating a new subclaim instead.",
+    # Low confidence: propose a new superclaim line (original vs. greenwashing_superclaims.json), not a new NC_ under SC_*.
+    draft = _paragraph_as_new_superclaim_text(paragraph, max_len=400)
+    if draft and _normalized_superclaim_text_key(draft) not in existing_sc_keys:
+        proposals.append(
+            (
+                "new_superclaim",
+                {
+                    "superclaimText": draft,
+                    "fromLowConfidenceMapping": True,
+                    "nearbySubclaimId": best_sub_id,
+                    "nearbySubclaimText": best_sub_text,
+                    "nearbySuperclaimId": best_super_id,
+                    "nearbySuperclaimText": best_super_text,
+                    "confidence": conf,
+                    "verdict": verdict,
+                },
+                reason
+                or "Low confidence mapping; propose adding a new superclaim not already in the taxonomy.",
+            )
         )
-    )
     return ([], proposals)
 
 
@@ -685,6 +718,7 @@ def analyze(req: AnalyzeRequest) -> AnalyzeResponse:
             sub_candidates=sub_cands,
             super_candidates=super_cands,
             claim_map=claim_map,
+            superclaims=superclaims,
             merge_pair_min_cosine=req.merge_pair_min_cosine,
             merge_max_pairs=req.merge_max_pairs,
             propose_new_if_below=req.propose_new_if_below,
